@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* 
+
+.roboto-mono-<uniquifier> {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+*/
+
+:root {
+    --blue-primary: #0a0a23;
+    --blue-secondary: #1b1b32;
+    --yellow-border: #f1a02a;
+    --yellow-primary: #feac32;
+    --yellow-secondary: #fecc4c;
+    --white: #ffffff;
+    --white-primary: #f5f6f7;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+header {
+    padding: 1px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-primary);
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+.logo {
+    color: var(--white);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+}
+
+main {
+    background-color: var(--white-primary);
+    margin-top: 35px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+.sec1 {
+    padding: 5px;
+    color: var(--blue-secondary);
+    padding: 10px;
+    min-height: calc(100vh - 35px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagline {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+.subline {
+    margin-bottom: 35px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-container a {
+    margin: 10px 0;
+    border: var(--yellow-border) 5px solid;
+    padding: 5px;
+    background-color: var(--yellow-primary);
+    color: var(--blue-primary);
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.cta-container a:hover {
+    background-color: var(--yellow-secondary);
+}
+
+.sec2 {
+    padding: 10px;
+    background-color: var(--blue-secondary);
+    color: var(--white);
+}
+
+sec2 h1 {
+    margin: 25px 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+.sec2 p {
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.sec2 .term {
+    font-weight: 600;
+}
