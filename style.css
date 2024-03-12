@@ -11,14 +11,19 @@
 
 */
 
+/* global + presets */
+
 :root {
     --blue-primary: #0a0a23;
     --blue-secondary: #1b1b32;
+    --blue-tertiary: #d0d0d5;
     --yellow-border: #f1a02a;
     --yellow-primary: #feac32;
     --yellow-secondary: #fecc4c;
     --white: #ffffff;
     --white-primary: #f5f6f7;
+    font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 
@@ -32,6 +37,22 @@ a {
     text-decoration: none;
     color: unset;
 }
+
+input {
+    outline: none;
+    border: none;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+button {
+    outline: none;
+    border: none;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+/* header - base */
 
 header {
     padding: 1px;
@@ -50,7 +71,7 @@ header {
     color: var(--white);
     font-weight: 700;
     font-style: normal;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 main {
@@ -61,65 +82,168 @@ main {
 }
 
 .sec1 {
-    padding: 5px;
+    padding: 20px;
     color: var(--blue-secondary);
     padding: 10px;
-    min-height: calc(100vh - 35px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .tagline {
-    margin-bottom: 30px;
+    margin: 30px 0;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 2.5rem;
     text-align: center;
+    line-height: 2.5rem;
 }
 
 .subline {
-    margin-bottom: 35px;
-    font-size: 15px;
+    margin: 30px 0;
+    font-size: 1.5rem;
     text-align: center;
+    line-height: 2.5rem;
 }
 
 .cta-container {
+    margin: 30px 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
-.cta-container a {
-    margin: 10px 0;
+.cta-container a,
+.cta-container a:visited {
+    margin: 0 10px;
     border: var(--yellow-border) 5px solid;
     padding: 5px;
     background-color: var(--yellow-primary);
     color: var(--blue-primary);
     text-align: center;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
-.cta-container a:hover {
+.cta-container a:hover,
+.cta-container a:focus {
     background-color: var(--yellow-secondary);
 }
 
 .sec2 {
-    padding: 10px;
+    padding: 20px;
     background-color: var(--blue-secondary);
     color: var(--white);
 }
 
-sec2 h1 {
-    margin: 25px 0;
+.sec2 h1 {
+    margin: 30px 0 40px;
     text-align: center;
-    font-size: 25px;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .sec2 p {
-    margin: 20px 0;
-    font-size: 15px;
+    margin: 30px 0;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 }
 
 .sec2 .term {
     font-weight: 600;
+}
+
+.sec3 {
+    padding: 20px;
+}
+
+.sec3 h1 {
+    margin: 30px 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.sec3 ul {
+    margin: 30px 0;
+}
+
+.sec3 li {
+    margin: 20px 0;
+    border: var(--blue-primary) 3px solid;
+    list-style-type: none;
+
+}
+
+.sec3 h2,
+.sec3 h2:visited {
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: 400;
+    background-color: var(--blue-secondary);
+    color: var(--white);
+    text-align: center;
+    cursor: pointer;
+}
+
+.sec3 h2:hover,
+.sec3 h2:focus {
+    background-color: var(--blue-tertiary);
+    color: var(--blue-primary);
+}
+
+.sec3 p {
+    display: none;
+    background-color: var(--blue-secondary);
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.sec4 {
+    padding: 20px;
+    background-color: var(--blue-secondary);
+    color: var(--white-primary);
+}
+
+.sec4 h1 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.sec4 p {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.sec4 form {
+    margin: 30px 0;
+}
+
+.sec4 form input {
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    background-color: var(--white-primary);
+    color: var(--blue-primary);
+    font-weight: 500;
+}
+
+.sec4 form input:first-child {
+    margin: 0 0 20px 0;
+}
+
+.sec4 form button,
+.sec4 form button:visited {
+    width: 100%;
+    border: var(--yellow-border) 5px solid;
+    padding: 5px;
+    background-color: var(--yellow-primary);
+    color: var(--blue-primary);
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.sec4 form button:hover,
+.sec4 form button:active {
+    background-color: var(--yellow-secondary);
 }
