@@ -52,7 +52,9 @@ button {
     font-optical-sizing: auto;
 }
 
-/* header - base */
+li {
+    list-style-type: none;
+}
 
 header {
     padding: 1px;
@@ -79,6 +81,16 @@ main {
     margin-top: 35px;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
+}
+
+.con-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con-width {
+    max-width: 600px;
 }
 
 .sec1 {
@@ -133,7 +145,6 @@ main {
 
 .sec2 h1 {
     margin: 30px 0 40px;
-    text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
 }
@@ -156,21 +167,19 @@ main {
     margin: 30px 0;
     font-weight: 700;
     font-size: 2.5rem;
+    text-align: center;
 }
 
-.sec3 ul {
+.course-details {
     margin: 30px 0;
 }
 
-.sec3 li {
+.topic-details {
     margin: 20px 0;
     border: var(--blue-primary) 3px solid;
-    list-style-type: none;
-
 }
 
-.sec3 h2,
-.sec3 h2:visited {
+.topic-details h2 {
     padding: 10px;
     font-size: 2rem;
     font-weight: 400;
@@ -180,18 +189,23 @@ main {
     cursor: pointer;
 }
 
-.sec3 h2:hover,
-.sec3 h2:focus {
+.topic-details h2:hover {
     background-color: var(--blue-tertiary);
     color: var(--blue-primary);
 }
 
-.sec3 p {
+.detail-list {
     display: none;
     background-color: var(--blue-secondary);
     color: var(--white);
     font-size: 1.5rem;
-    padding: 10px;
+    padding: 15px;
+    line-height: 2.5rem;
+}
+
+.detail-list li {
+    margin-left: 20px;
+    list-style: outside disc;
 }
 
 .sec4 {
@@ -246,4 +260,21 @@ main {
 .sec4 form button:hover,
 .sec4 form button:active {
     background-color: var(--yellow-secondary);
+}
+
+@media screen and (min-width: 640px) {
+    .tagline {
+        font-size: 3rem;
+        margin: 40px 0;
+    }
+
+    .subline {
+        font-size: 2rem;
+        margin: 40px 0;
+    }
+
+    .cta-container a {
+        font-size: 2rem;
+        padding: 10px;
+    }
 }

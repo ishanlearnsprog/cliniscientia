@@ -1,7 +1,7 @@
 // display course details
 
 function showCourseDetail(index) {
-    const details = document.querySelectorAll(".sec3>ul>li>p");
+    const details = document.querySelectorAll(".detail-list");
     if (details[index].style.display == "block") {
         details[index].style.display = "none";
     } else {
