@@ -55,7 +55,6 @@ a {
 }
 
 .wrapper {
-    max-width: 625px;
     padding: 0 1rem;
     text-align: center;
 }
@@ -135,7 +134,7 @@ header {
 }
 
 .container-hero {
-    min-height: calc(100vh - 51px);
+    min-height: 100vh;
 }
 
 .container-course {
