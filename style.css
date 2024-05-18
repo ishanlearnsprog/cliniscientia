@@ -4,6 +4,7 @@
     --green1: hsl(158, 100%, 13%);
     --green2: hsl(100, 87%, 70%);
     --yellow1: hsl(60, 75%, 60%);
+    --yellow2: hsl(60, 70%, 50%);
     --white1: hsl(0, 0%, 100%);
     --grey1: hsl(0, 0%, 25%);
 }
@@ -46,6 +47,13 @@ a {
     font-weight: 900;
 }
 
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .wrapper {
     max-width: 625px;
     padding: 0 1rem;
@@ -72,13 +80,16 @@ a {
     justify-content: center;
 }
 
-.container-btn-nav a {
+.container-btn-nav a,
+.container-btn-nav p {
     background-color: var(--green2);
+    margin: 0;
     padding: 0.5rem 2rem;
     font-size: 1.6rem;
     text-align: center;
     color: var(--green1);
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 html {
@@ -115,25 +126,146 @@ header {
     color: var(--green1);
     text-transform: uppercase;
     display: block;
+    cursor: pointer;
 }
 
 .container-hero {
     min-height: calc(100vh - 51px);
+}
+
+.container-course {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.container-what {
-    min-height: 100vh;
+.container-tabs {
+    margin-top: 2rem;
+}
+
+.tab {
+    width: 100vw;
+    padding: 1rem;
+}
+
+.tab1 {
+    background-color: var(--yellow1);
+    color: var(--green1);
+}
+
+.tab2 {
+    background-color: var(--yellow2);
+    color: var(--green1);
+}
+
+.tab-header {
+    font-size: 1.5rem;
+}
+
+.tab-content {
+    display: none;
+}
+
+.review-box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.container-need {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.review-card {
+    margin: 2.5rem;
+    background-color: var(--green2);
+}
+
+.rc-image-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.rc-content-box {
+    padding: 1rem;
+}
+
+.rc-content-box h2 {
+    margin: 1rem 0;
+    font-size: 2.8rem;
+    color: var(--green1);
+}
+
+.rc-content-box p {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--green1);
+}
+
+#modal {
+    position: fixed;
+    min-width: 80%;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    overflow: auto;
+    padding: 2rem;
+    background-color: var(--yellow2);
+}
+
+#modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    backdrop-filter: blur(3px);
+}
+
+.container-contact h1 {
+    font-size: 2.4rem;
+    margin: 1rem 0;
+}
+
+.container-contact p {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+
+.contact-form {
+    margin-top: 3rem; 
+}
+
+.fel-box {
+    margin: 1rem 0;
+}
+
+.fel-box label {
+    display: block;
+    margin-bottom: 1rem; 
+    font-size: 1.6rem;
+}
+
+.fel-box input {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.fel-submit input {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: 0.5rem 0;
+    background-color: var(--green1);
+    color: var(--white1);
+    font-size: 1.6rem;
+}
+
+.modal-hide {
+    display: none;
 }
