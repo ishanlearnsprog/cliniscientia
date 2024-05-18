@@ -98,14 +98,19 @@ html {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--grey1);
+    background-color: var(--green1);
 }
 
 .logo {
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     color: var(--white1);
     text-transform: uppercase;
