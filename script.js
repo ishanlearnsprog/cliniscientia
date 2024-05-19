@@ -2,9 +2,12 @@
 
 const modal = document.getElementById("modal");
 const modalBackground = document.getElementById("modal-background");
+const form = document.querySelector(".contact-form"); 
 
 const openModalBtns = document.querySelectorAll(".modal-open");
 const closeModalBtns = document.querySelectorAll(".modal-close");
+
+const contactInfo = document.querySelectorAll(".fel-box input");
 
 function openModal(e) {
     modalBackground.classList.remove("modal-hide");
@@ -18,13 +21,17 @@ function closeModal() {
     console.log("Closing Modal");
 }
 
+function submitContact(e) {
+    e.preventDefault();
+    console.log("You pressed submit!!!");
+}
+
 closeModalBtns.forEach((e) => {
     e.addEventListener("click", closeModal);
 });
-
 
 openModalBtns.forEach((e) => {
     e.addEventListener("click", openModal);
 });
 
-console.log(modal, modalBackground, openModalBtns, closeModalBtns);
+form.addEventListener("submit", submitContact);
