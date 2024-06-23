@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --slate-1: hsl(214, 32%, 91%);
+    --slate-2: hsl(215, 16%, 47%);
+    --slate-3: hsl(229, 84%, 5%);
+    --blue-1: hsl(212, 96%, 78%);
+    --indigo-1: hsl(228, 96%, 89%);
+    --indigo-2: hsl(242, 47%, 34%);
+    --indigo-3: hsl(244, 47%, 20%);
+    --yellow-2: hsl(50, 98%, 64%);
+    --yellow-3: hsl(48, 96%, 53%);
+    --white-2: hsl(0, 0%, 95%);
+    --white-3: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+.logo {
+    display: block;
+    font-family: "Oswald";
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--white-3);
+}
