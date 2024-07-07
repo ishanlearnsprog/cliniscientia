@@ -1,39 +1,6 @@
 header {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    background-color: var(--slate-3);
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.nav-desktop {
-    display: none;
-}
-
-.nav-desktop ul {
-    display: flex;
-}
-
-.nav-desktop-links {
-    display: block;
-    margin: 0 1rem;
-    font-family: "Oswald";
-    font-size : 2rem;
-    text-transform: uppercase;
-    color: var(--slate-1);
-}
-
-.nav-desktop-links:hover {
-    color: var(--blue-1);
-}
-
-@media screen and (min-width: 450px) {
-    .nav-desktop {
-        display: block;
-    }
-    
-    .logo {
-        font-size: 3.2rem;
-    }
 }

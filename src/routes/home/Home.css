@@ -1,364 +1,201 @@
-#introduction {
-    position: relative;
-    min-height: calc(100vh - 46px);
-}
-
-.background-img-box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
+section {
+    margin: 1rem 0;
+    padding: 1rem; 
     width: 100%;
-    height: calc(100vh - 46px);
-    background-image: url("../../assets/images/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-.introduction-content-box {
-    min-height: calc(100vh - 46px);
-    padding: 1rem;
-    backdrop-filter: blur(5px) brightness(30%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.intro-imga-box {
+    margin: 4rem 0;
+    width: 100%;
 }
 
-.introduction-content-wrapper {
+.intro-imga-box img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.intro-content-box h1 {
+    margin: 2rem 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.intro-content-box p {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    color: var(--text-grey);
+    text-align: center;
+}
+
+.course-box {
+    background-color: var(--blue-primary);
+}
+
+.course-box h1 {
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    color: var(--text-white);
+    text-align: center;
+}
+
+.course-box p {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    color: var(--text-white-secondary);
+    text-align: center;
+}
+
+.course-intro-box {
+    margin: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.introduction-content-box h1 {
-    margin: 2rem 0;
-    font-family: "Oswald";
-    font-size: 4rem;
-    font-weight: 500;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--white-3);
-    opacity: 0;
-    animation: slideIn 0.3s 0.3s forwards;
-}
-
-.introduction-content-box p {
-    margin: 2rem 0;
-    max-width: 800px;
-    line-height: 1.75;
-    font-family: "Playfair Display";
-    font-size: 2rem;
-    font-weight: 500;
-    color: var(--white-3);
-    text-align: center;
-    opacity: 0;
-    animation: slideIn 0.3s 0.7s forwards;
-}
-
-.journey-btn {
-    display: block;
+.course-info-card {
     margin: 2rem;
-    padding: 1rem 2rem;
-    font-family: "Oswald";
-    font-size: 2rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: var(--indigo-3);
-    background-color: var(--white-3);
-    opacity: 0;
-    animation: slideIn 0.3s 1.1s forwards;
 }
 
-.journey-btn:hover {
-    background-color: var(--indigo-1);
-}
-
-@keyframes slideIn {
-    0% {
-        transform: translate(0, 50%);
-        opacity: 0;
-    }
-    100% {
-        transform: translate(0, 0);
-        opacity: 1;
-    }
-}
-
-.introduction-cta {
-    display: block;
-    margin: 2rem 0;
-    font-family: "Oswald";
-    font-size: 2rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-decoration: underline;
-    color: var(--white-3);
-    opacity: 0;
-    animation: slideIn 0.3s 1.5s forwards;
-}
-
-.introduction-cta:hover {
-    color: var(--blue-1);
-}
-
-#cdmintro {
-    min-height: 100vh;
+.course-info-card-img-box {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cdmintro-wrapper {
-    max-width: 600px;
-    padding: 1rem;
-}
-
-.cdmintro-wrapper h1 {
-    margin: 1rem 0;
-    font-family: "Oswald";
-    font-size: 3.2rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.cdmintro-wrapper p {
-    margin: 1rem 0;
-    line-height: 1.75;
-    font-family: "Playfair Display";
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-align: justify;
-}
-
-.cdmintro-wrapper li {
-    margin: 1rem 0;
-    line-height: 1.75;
-    font-family: "Playfair Display";
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-align: justify;
-}
-
-.journey-nav-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.journey-btn-alt {
-    display: block;
-    margin: 2rem;
-    padding: 1rem 2rem;
-    font-family: "Oswald";
-    font-size: 2rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--white-3);
-    background-color: var(--indigo-3);
-}
-
-.journey-btn-alt:hover {
-    color: var(--indigo-1);
-}
-
-#benefits {
-    min-height: 100vh;
-    background-color: var(--indigo-3);
-    color: var(--white-3);
-}
-
-.benefits-wrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#benefits h1 {
-    padding: 2rem;
-    font-family: "Oswald";
-    font-size: 3.2rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.benefits-box {
-    width: 100%;
-    padding: 3rem;
-    display: flex;
-    gap: 3rem;
-    justify-content: space-around;
-}
-
-.benefits-card {
+    aspect-ratio: 3/2 auto;
     border-radius: 1rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--white-3);
-    box-shadow: var(--indigo-1) 0px 1px 3px;
-    color: var(--indigo-3);
-}
-
-.benefits-card h2 {
-    margin: 1rem;
-    font-family: "Oswald";
-    font-size: 2.4rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
-}
- 
-.benefits-card p {
-    margin: 1rem;
-    font-family: "Playfair Display";
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-align: center;
-    text-align-last: center;
-    align-self: center;
-}
-
-.benefits-course-box {
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.benefits-course-box p {
-    margin: 1rem 0;
-    max-width: 600px;
-    line-height: 1.75;
-    font-family: "Playfair Display";
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-align: justify;
-    text-align-last: center;
-}
-
-#benefits .journey-btn-alt {
-    background-color: var(--white-3);
-    color: var(--indigo-3);
-}
-
-#benefits .journey-btn-alt:hover {
-    background-color: var(--indigo-1);
-}
-
-.reviews-wrapper {
-    min-height: 100vh;
-    display: flex;
-}
-
-.review-box {
-    width: 50%;
-    padding: 3rem;
+    margin-bottom: 2rem;
+    background-color: var(--blue-secondary);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.review-box h1 {
+.course-info-card-icon-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-info-card-icon-border-box {
+    padding: 2rem;
+    border-radius: 1rem ;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 5px;
+    background-color: var(--blue-primary);
+}
+
+.course-info-card-img-box p {
+    opacity: 0.5;
+    margin: 1rem;
+}
+
+.course-info-card-icon-box svg {
+    fill: var(--text-white);
+}
+
+.course-info-card-content-box h2 {
+    font-size: 2rem;
+    color: var(--text-white);
+    text-align: left;
     margin: 1rem 0;
-    font-family: "Oswald";
-    font-size: 3.2rem;
-    font-weight: 400;
-    text-transform: uppercase;
+}
+
+.course-info-card-content-box p {
+    font-size: 1.5rem;
+    color: var(--text-white-secondary);
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.services-box h1 {
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.services-cards-box {
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-card {
+    max-width: 400px;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 5px;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--text-white);
+    display: flex;
+    jutify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.services-card-content h2 {
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: var(--text-black);
+}
+
+.services-card-content p {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--text-black);
+}
+
+.reviews-img-box {
+    width: 100%;
+    aspect-ratio: 3/2 auto;
+}
+
+.reviews-img-box img {
+    border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.reviews-content-box {
+    margin: 2rem 0;
+}
+
+.reviews-content-box h1 {
+    margin: 3rem 0;
+    font-size: 2.5rem;
     text-align: center;
 }
 
 .review-card {
-    border-radius: 1rem;
-    width: 100%;
+    margin: 2rem;
+}
+
+.review-card h2 {
     margin: 1rem 0;
-    padding: 3rem;
-    background-color: var(--indigo-3);
-    color: var(--white-3);
-}
-
-.review-card-header {
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "Oswald";
-    text-transform: uppercase;
-}
-
-.review-card-header h2 {
     font-size: 2rem;
-    font-weight: 500;
 }
 
 .review-card p {
-    margin-top: 1rem;
-    font-family: "Playfair Display";
-    font-size: 1.6rem;
-    font-weight: 400;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.intro-contact-box h1 {
+    margin: 2rem;
+    font-size: 2.5rem;
+    color: var(--text-white);
     text-align: center;
 }
 
-.cta-box {
-    width: 50%;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.cta-box p {
-    margin: 1rem 0;
-    line-height: 1.75;
-    font-family: "Playfair Display";
-    font-weight: 500;
-    font-size: 2rem;
-}
-
-.cta-box .contact-info {
-    border-radius: 2rem;
-    padding: 2rem;
-    background-color: var(--indigo-3);
-    color: var(--white-3);
-}
-
-.cta-box .journey-btn-alt {
-    font-weight: 500;
-    font-size: 2rem;
-}
-
-@media screen and (max-width: 800px) {
-    .journey-nav-box {
-        flex-direction: column;
-    }
-    
-    .benefits-box {
-        flex-direction: column;
-    }
-    .reviews-wrapper {
-        flex-direction: column;
-    }
-
-    .review-box {
-        width: 100%;
-    }
-
-    .cta-box {
-        width: 100%;
-    }
-
-    .hide-btn {
-        display: none;
-    }
-
+.intro-contact-box p {
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: var(--text-white-secondary);
+    text-align: center;
 }

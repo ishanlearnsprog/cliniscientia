@@ -8,7 +8,7 @@ export default function Cross() {
           viewBox="0 0 24 24"
         >
         <path
-        stroke="#fff"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="1.5"

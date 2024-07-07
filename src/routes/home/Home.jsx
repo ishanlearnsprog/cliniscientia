@@ -1,113 +1,196 @@
 import { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 
-import background from '../../assets/images/background.png'
+import image1 from '../../assets/images/image1.jpg'
+import image2 from '../../assets/images/image2.jpg'
+import Logo from '../../components/svg/Logo.jsx'
+import People from '../../components/svg/People.jsx'
+import Syllabus from '../../components/svg/Syllabus.jsx'
+import Monitor from '../../components/svg/Monitor.jsx'
 import Clock from '../../components/svg/Clock.jsx'
 import './Home.css'
 
 export default function Home() {
+
+    const ratingStars = '&#9733; &#9733; &#9733; &#9733; &#9733;'
+
     return (
         <Fragment>
-        <section id="introduction">
-            <div className="background-img-box"></div>
-            <div className="introduction-content-box">
-                <div className="introduction-content-wrapper">
-                    <h1>Learn Clinical Data Management & Clinical Research</h1>
-                    <p>Launch your career in Clinical Data Management with Clini Scientia's comprehensive one-on-one course taught by an experienced data manager.</p>
-                    <a href="#cdmintro" className="journey-btn">Start your CDM Journey</a>
-                    <Link to={ 'contact' } className="introduction-cta">Connect with our instructor</Link>
-                </div>
-            </div>
-        </section>
-        <section id="cdmintro">
-            <div className="cdmintro-wrapper">
-                <h1>What is Clinical Data Management?</h1>
-                <p>Clinical Data Management (CDM) is the process of collecting, processing and safeguarding data produced by clinical trials and medical research studies.</p>
-                <p>Reliable and accurate data is crucial for drawing accurate conclusions from clinical trials. Without trustworthy data, the results of a clinical research may lead to misleading conclusions and risk patient safety.</p>
-                <p>CDM professionals ensure the quality and integrity of data produced in research findings, leading to more robust medical evidence for developing new treatments and improving patient care.</p>
-                
-                <h1>Why pursue a career in CDM?</h1>
-                <ul>
-                    <li><span style={{ fontWeight: 700 }}>Stable and Growing Field:</span> The demand for skilled CDM professionals is high and expected to continue growing due to the ongoing development of new medical therapies.</li>
-                    <li><span style={{ fontWeight: 700 }}>Lucrative Career Path:</span> CDM professionals typically earn competitive salaries with opportunities for advancement and specialization.</li>
-                    <li><span style={{ fontWeight: 700 }}>Transferable Skills:</span> The skills you gain in CDM, like data analysis, attention to detail, and project management, are valuable across various industries.</li>
-                    <li><span style={{ fontWeight: 700 }}>Remote Work Opportunities:</span> Many CDM positions offer remote work flexibility, allowing for a better work-life balance.</li>
-                </ul>
-                <div className="journey-nav-box">
-                    <a href="#benefits" className="journey-btn-alt hide-btn">How we can help?</a>
-                </div>
-            </div>
-        </section>
-        <section id="benefits">
-            <div className="benefits-wrapper">
-                <h1>Take a deep dive in the world of CDM with us</h1>
-                <div className="benefits-box">
-                    <div className="benefits-card">
-                        <h2>One-on-One Learning</h2>
-                        <p>Get personalized guidance, in-depth explanations and targeted feedback from an experienced data manager.</p>
+            <section className="intro-box">
+                <div className="intro-content-box">
+                    <h1 className="poppins-bold">Learn Clinical Data Management &#x26; Clinical Research</h1>
+                    <p className="poppins-med">Launch your career in Clinical Research with our online one-on-one course.</p>
+                    <div className="intro-imga-box">
+                        <img src={ image1 } />
                     </div>
-                    <div className="benefits-card">
-                        <h2>Comprehensive Curriculum</h2>
-                        <p>Covers the basics of CDM and then expands upon the techniques and best practises employed by professionals.</p>
-                    </div>
-                    <div className="benefits-card">
-                        <h2>Online Classes</h2>
-                        <p>Leave behind the hassle of commuting and participate in classes from anywhere with an internet connection.</p>
-                    </div>
-                    <div className="benefits-card">
-                        <h2>Flexible Timings</h2>
-                        <p>Structure your learning around your schedule, whether it's studying in the mornings, evenings, or on weekends.</p>
+                    <div className="section-btn-box">
+                        <Link to={ '/contact' } className="btn btn-primary poppins-bold">Start Learning</Link>
+                        <a href="#intro-info" className="poppins-bold nav-link">Learn More</a>
                     </div>
                 </div>
-                <div className="benefits-course-box">
-                    <div>
-                        <p>We offer a unique learning experience with one-on-one teaching, allowing you to receive personalized guidance tailored to your specific needs, learning style and prior knowledge. The course is structured such that it aligns with the industry trends and emphasizes practical skill development through real-world examples and hands-on projects. Plus, with flexible timings and online classes, you can make your studies to fit your busy schedule and learn at your own pace.</p>
-                        <div className="journey-nav-box">
-                            <Link to={ 'course' } className="journey-btn-alt">More about our course</Link>
-                            <a href="#reviews" className="journey-btn-alt hide-btn">Hear from our students</a>
+                <div className="intro-img-box" style={{ display: "none" }}>
+                    <img src={ image1 } />
+                </div>
+            </section>
+            <section className="course-box" id="intro-info">
+                <div className="section-icon-box">
+                    <Logo />
+                </div>
+                <h1 className="poppins-bold">Course Structure</h1>
+                <p className="poppins-reg">The course covers the basics of Clinical Data Management (CDM) and then expands on the techniques employed by professionals.</p>
+                <div className="course-intro-box">
+                    <div className="course-info-card">
+                        <div className="course-info-card-img-box">
+                            <div className="course-info-card-icon-box">
+                                <div className="course-info-card-icon-border-box">
+                                    <Syllabus />
+                                </div>
+                            </div>
+                            <p className="poppins-reg">Preview Coming Soon</p>
+                        </div>
+                        <div className="course-info-card-content-box">
+                            <h2 className="poppins-bold">Introduction</h2>
+                            <p className="poppins-reg">What is CDM, why it is needed, role and responsibilities of a data manager and preview of what you will learn in the course.</p>
+                        </div>
+                    </div>
+                    <div className="course-info-card">
+                        <div className="course-info-card-img-box">
+                            <div className="course-info-card-icon-box">
+                                <div className="course-info-card-icon-border-box">
+                                    <Syllabus />
+                                </div>
+                            </div>
+                            <p className="poppins-reg">Preview Coming Soon</p>
+                        </div>
+                        <div className="course-info-card-content-box">
+                            <h2 className="poppins-bold">Tools &#x26; Tutorial</h2>
+                            <p className="poppins-reg">Introduction and hands-on training of the commonly used tools in a CDM project.</p>
+                        </div>
+                    </div>
+                    <div className="course-info-card">
+                        <div className="course-info-card-img-box">
+                            <div className="course-info-card-icon-box">
+                                <div className="course-info-card-icon-border-box">
+                                    <Syllabus />
+                                </div>
+                            </div>
+                            <p className="poppins-reg">Preview Coming Soon</p>
+                        </div>
+                        <div className="course-info-card-content-box">
+                            <h2 className="poppins-bold">Project Phase 1: Initiation Phase</h2>
+                            <p className="poppins-reg">Introduction to various specifications and steps taken at the start of a CDM project.</p>
+                        </div>
+                    </div>
+                    <div className="course-info-card">
+                        <div className="course-info-card-img-box">
+                            <div className="course-info-card-icon-box">
+                                <div className="course-info-card-icon-border-box">
+                                    <Syllabus />
+                                </div>
+                            </div>
+                            <p className="poppins-reg">Preview Coming Soon</p>
+                        </div>
+                        <div className="course-info-card-content-box">
+                            <h2 className="poppins-bold">Project Phase 2: Coduct Phase</h2>
+                            <p className="poppins-reg">Explanation and hands-on training of the daily activities required in a CDM project.</p>
+                        </div>
+                    </div>
+                    <div className="course-info-card">
+                        <div className="course-info-card-img-box">
+                            <div className="course-info-card-icon-box">
+                                <div className="course-info-card-icon-border-box">
+                                    <Syllabus />
+                                </div> 
+                            </div>
+                            <p className="poppins-reg">Preview Coming Soon</p>
+                        </div>
+                        <div className="course-info-card-content-box">
+                            <h2 className="poppins-bold">Project Phase 3: Closure Phase</h2>
+                            <p className="poppins-reg">Highlights the procedures &#x26; protocols followed while closing a CDM project.</p>
+                        </div>
+                    </div>
+                    <div className="course-info-card">
+                        <div className="course-info-card-img-box">
+                            <div className="course-info-card-icon-box">
+                                <div className="course-info-card-icon-border-box">
+                                    <Syllabus />
+                                </div>
+                            </div>
+                            <p className="poppins-reg">Preview Coming Soon</p>
+                        </div>
+                        <div className="course-info-card-content-box">
+                            <h2 className="poppins-bold">Best Practises &#x26; Intrview Guide</h2>
+                            <p className="poppins-reg">A guide to enhancing your CDM workflow and how to get a job as a data manager.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="reviews">
-            <div className="reviews-wrapper">
-                <div className="review-box">
-                    <h1>Hear from our students</h1>
-                    <div className="review-card">
-                        <div className="review-card-header">
-                            <h2>Ishan Rajendra</h2>
-                            <h2>4&#9733;</h2>
+                <div className="section-btn-box">
+                    <Link to={ '/course' } className="poppins-bold btn btn-primary">More Course Details</Link>
+                </div>
+            </section>
+            <section className="services-box">
+                <h1 className="poppins-bold">Take a deep dive in the world of Clinical Research with us</h1>
+                <div className="services-cards-box">
+                    <div className="services-card">
+                        <People />
+                        <div className="services-card-content">
+                            <h2 className="poppins-bold">One On One Learning</h2>
+                            <p className="poppins-reg">Get personalied guidance from an experienced data manager.</p>
                         </div>
-                        <p>"If you're looking for a well-structured program to launch your CDM career, this course definitely delivers."</p>
                     </div>
-                    <div className="review-card">
-                        <div className="review-card-header">
-                            <h2>Kaustubh Singh</h2>
-                            <h2>5&#9733;</h2>
+                    <div className="services-card">
+                        <Syllabus />
+                        <div className="services-card-content">
+                            <h2 className="poppins-bold">Comprehensive Material</h2>
+                            <p className="poppins-reg">Equips the learner with the essential skills needed for a successful carrer.</p>
                         </div>
-                        <p>"I've implemented several strategies learned in the course, and I've noticed a significant improvement in my data management workflow."</p>
                     </div>
-                    <div className="review-card">
-                        <div className="review-card-header">
-                            <h2>Rahul Gupta</h2>
-                            <h2>4&#9733;</h2>
+                    <div className="services-card">
+                        <Monitor />
+                        <div className="services-card-content">
+                            <h2 className="poppins-bold">Online Classes</h2>
+                            <p className="poppins-reg">Join classes from anywhere with an internet connection.</p>
                         </div>
-                        <p>"Busy professionals can learn on their own terms with this course's online format, comprehensive materials and the instructor's guidance."</p>
+                    </div>
+                    <div className="services-card">
+                        <Clock />
+                        <div className="services-card-content">
+                            <h2 className="poppins-bold">Flexible Timings</h2>
+                            <p className="poppins-reg">Structure your learning experience around your schedule.</p>
+                        </div>
                     </div>
                 </div>
-                <div className="cta-box">
-                    <p>We at Clini Scientia aim to provide you with the neccessary skillset to explore and build a career in the field of Clinical Research with Clinical Data Management. Start your professional journey with us!</p>
-                    <p className="contact-info">For more details:<br />
-                    Contact us at: +91 93050 76732<br />
-                    Email us at: ishanlearnsprog@gmail.com</p>
-                    <p>You can also book a call with our instructor to discuss about the course syllabus, hands-on training, class timings and fee structure.</p>
-                    <div className="journey-nav-box">
-                        <Link to={ 'contact' } className="journey-btn-alt">Connect with our instructor</Link>
+            </section>
+            <section className="reviews-box">
+                <div className="reviews-img-box">
+                    <img src={ image2 } />
+                </div>
+                <div className="reviews-content-box">
+                    <h1 className="poppins-bold">Hear from our students</h1>
+                    <div className="reviews-cards-box">
+                        <div className="review-card">
+                            <Logo />
+                            <h2 className="poppins-bold">Ishan Rajendra <br /> &#9733; &#9733; &#9733; &#9733; &#9733;</h2>
+                            <p className="poppins-reg">If you're looking for a well-structured program to launch your CDM career, this course is perfect.</p>
+                        </div>
+                        <div className="review-card">
+                            <Logo />
+                            <h2 className="poppins-bold">Kaustubh Singh <br /> &#9733; &#9733; &#9733; &#9733; &#9733;</h2>
+                            <p className="poppins-reg">I've implemented several strategies learned in the course, and I've noticed a significant improvement in my daily workflow.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section className="intro-contact-box">
+                <div className="section-icon-box">
+                    <Logo />
+                </div>
+                <h1 className="poppins-bold">Join 100+ students already learning with Clini Scientia</h1>
+                <p className="poppins-reg">We at Clini Scientia aim to equip you with the neccesary skills to build a successful career in Clinical Research.</p>
+                <div className="section-btn-box">
+                    <Link to={ '/contact' } className="poppins-bold btn btn-primary">Book a trial class</Link>
+                </div>
+            </section>
         </Fragment>
     )
 }
