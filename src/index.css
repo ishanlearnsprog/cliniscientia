@@ -5,9 +5,9 @@
     --text-black: #000000;
     --text-grey: #4b5563;
     --text-white: #f8fafc;
-    --text-white-secondary: #f8fafc;
+    --text-white-secondary: #dbe6f0;
     --blue-primary: #2D67F6;
-    --blue-secondary: #4277F7;
+    --blue-secondary: #0d59f2;
 }
 
 .poppins-reg {
@@ -55,36 +55,42 @@ html {
 }
 
 .logo-box {
-    font-size: 2.4rem;
-    text-transform: uppercase;
-}
-
-.logo-box {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
 }
 
 .btn {
+    border-radius: 2rem;
     margin: 1rem 2rem;
-    border-radius: 1rem;
     padding: 1rem 2rem;
-    font-size: 1.6rem;
-    color: var(--text-white);
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px;
+    text-transform: capitalize;
 }
 
 .btn-primary {
-    background-color: var(--blue-secondary);
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px;
+    color: var(--text-white);
+    background-color: var(--blue-primary);
 }
 
 .btn-primary:hover {
     background-color: var(--blue-secondary);
 }
 
+.btn-primary-white {
+    color: var(--blue-primary);
+    background-color: var(--text-white);
+}
+
+.btn-primary-white:hover {
+    background-color: var(--text-white-secondary);
+}
+
 .section-btn-box {
-    margin: 1rem;
     text-align: center;
 }
 
@@ -95,10 +101,6 @@ html {
 
 .section-btn-box .nav-link:hover {
     text-decoration: underline;
-}
-
-.intro-contact-box {
-    background-color: var(--blue-primary);
 }
 
 .section-icon-box {

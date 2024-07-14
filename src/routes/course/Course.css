@@ -1,0 +1,89 @@
+.hero-content-box h1 {
+    font-size: 2.5rem;
+}
+
+.hero-content-box p {
+    font-size: 2rem;
+}
+
+.hero-details-box {
+    margin: 2rem 0;
+}
+
+.hero-details {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero-details p {
+    font-size: 1.5rem;
+}
+
+.hero-details .icon-box {
+    width: 20px;
+    height: 20px;
+}
+
+.hero-content-box .btn {
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.modules-box {
+    background-color: var(--blue-primary);
+    color: var(--text-white);
+}
+
+.modules-box h1 {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.modules-box p {
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.modules-box li {
+    list-style: disc inside;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.module-details-box {
+    margin: 2rem 0;
+}
+
+.module-header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.module-header-box .icon-box {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer
+}
+
+.placement-box h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.placement-img-box {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.placement-img-box img {
+    border-radius: 2rem;
+    aspect-ratio: 3/2 auto;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
