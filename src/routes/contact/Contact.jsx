@@ -71,7 +71,7 @@ export default function Contact() {
                         </div>
                         <button className="poppins-bold btn btn-primary-white" type="submit">Submit</button>
                     </form>
-                    <p>{{ error?.msg }}</p>
+                    <p>{ error?.msg }</p>
                 </div>
             </section>
             <section className="contact-details-box">
