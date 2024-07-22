@@ -1,6 +1,10 @@
 .about-box h1 {
-    margin: 2rem;
+    margin: 0 2rem 2rem 2rem;
     font-size: 2.5rem;
+}
+
+.about-down-box h1 {
+    margin: 2rem;
 }
 
 .about-box p {
@@ -9,8 +13,8 @@
 }
 
 .about-img-box {
-    padding: 1rem;
     width: 100%;
+    padding: 1rem;
 }
 
 .about-img-box img {
@@ -19,4 +23,36 @@
     aspect-ratio: 3/2 auto;
     object-fit: cover;
     overflow: hidden;
+}
+
+@media screen and (min-width: 900px) {
+    .about-up-box {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-up-content-box {
+        margin: auto;
+        max-width: 500px;
+    }
+
+    .about-down-box {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about-down-content-box {
+        margin: auto;
+        max-width: 500px;
+    }
+
+    .about-img-box {
+        min-width: 500px;
+        max-width: 650px;
+    }
 }

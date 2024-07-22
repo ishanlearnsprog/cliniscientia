@@ -1,19 +1,20 @@
 import { Fragment } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
-import Logo from '../svg/Logo.jsx'
+import LogoBox from '../logobox/LogoBox.jsx'
 import './Footer.css'
 
 export default function Footer() {
+
     return (
         <footer>
-            <div className="logo-box poppins-bold"><Logo /> Clini Scientia</div>
+            <LogoBox />
             <nav>
                 <ul>
-                    <li><Link to={ '/' } className="poppins-med">Home</Link></li>
-                    <li><Link to={ '/about' } className="poppins-med">About</Link></li>
-                    <li><Link to={ '/course' } className="poppins-med">Course</Link></li>
-                    <li><Link to={ '/contact' } className="poppins-med">Contact</Link></li>
+                    <li><NavLink to={ '/' } className="poppins-med">Home</NavLink></li>
+                    <li><NavLink to={ '/about' } className="poppins-med">About</NavLink></li>
+                    <li><NavLink to={ '/course' } className="poppins-med">Course</NavLink></li>
+                    <li><NavLink to={ '/contact' } className="poppins-med">Contact</NavLink></li>
                 </ul>
             </nav>
         </footer>

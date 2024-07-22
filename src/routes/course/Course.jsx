@@ -9,6 +9,7 @@ import Clock from '../../components/svg/Clock.jsx'
 import People from '../../components/svg/People.jsx'
 import Language from '../../components/svg/Language.jsx'
 import companies from '../../assets/images/companies.png'
+import companies2 from '../../assets/images/companies2.png'
 import './Course.css'
 
 export default function Course() {
@@ -74,7 +75,7 @@ export default function Course() {
             ]
         },
         {
-            title: 'Best Practises & Intrview Guide',
+            title: 'Best Practises & Interview Guide',
             subtitle: 'A guide to enhancing your CDM workflow and how to get a job as a data manager.',
             topics: [
                 'Best practises',
@@ -102,7 +103,7 @@ export default function Course() {
         return (
             <div key={ index } className="module-details-box">
                 <div className="module-header-box">
-                    <h1 className="poppins-med">{ mod.title }</h1>
+                    <h2 className="poppins-med">{ mod.title }</h2>
                     <div className="toogle-module-icon" onClick={ () => toggleModuleDetails(index) }>{ showModuleBody[index] ? <Minus /> : <Plus /> }</div>
                 </div>
                 { showModuleBody[index] && (
@@ -121,30 +122,40 @@ export default function Course() {
     return (
         <>
             <section className="hero-box">
-                <div className="hero-content-box">
-                    <div className="hero-title-box">
-                        <p className="poppins-reg">Clini Scientia's</p>
-                        <h1 className="poppins-bold">Clinical Data Management</h1>
+                <div className="hero-wrapper">
+                    <div className="hero-content-box">
+                        <div className="hero-title-box">
+                            <p className="poppins-reg">Clini Scientia's</p>
+                            <h1 className="poppins-bold">Clinical Data Management</h1>
+                        </div>
+                        <div className="hero-details-box">
+                            <div className="hero-details">
+                                <Like />
+                                <p className="poppins-reg"><span className="poppins-bold">100%</span> (66 reviews)</p>
+                            </div>
+                            <div className="hero-details">
+                                <People />
+                                <p className="poppins-reg">Personal Tutor</p>
+                            </div>
+                            <div className="hero-details">
+                                <Clock />
+                                <p className="poppins-reg">Flexible Timings</p>
+                            </div>
+                            <div className="hero-details">
+                                <Language />
+                                <p className="poppins-reg">Taught in English or Hindi</p>
+                            </div>
+                        </div>
+                        <Link to={ '/contact' } className="poppins-bold btn btn-primary-white">Book a trial class</Link>
                     </div>
-                    <div className="hero-details-box">
-                        <div className="hero-details">
-                            <Like />
-                            <p className="poppins-reg"><span className="poppins-bold">100%</span> (66 reviews)</p>
-                        </div>
-                        <div className="hero-details">
-                            <People />
-                            <p className="poppins-reg">Personal Tutor</p>
-                        </div>
-                        <div className="hero-details">
-                            <Clock />
-                            <p className="poppins-reg">Flexible Timings</p>
-                        </div>
-                        <div className="hero-details">
-                            <Language />
-                            <p className="poppins-reg">Taught in English or Hindi</p>
-                        </div>
-                    </div>
-                    <Link to={ '/contact' } className="poppins-bold btn btn-primary">Book a trial class</Link>
+                    
+                </div>
+            </section>
+            <section className="placement-box">
+                <h1 className="poppins-reg">Our alumini work with <span className="poppins-bold">10+</span> leading CRO, KPO and Pharma companies</h1>
+                <div className="placement-img-box">
+                    <img src={ companies } className="placement-imga" />
+                    <img src={ companies2 } className="placement-imgb" />
                 </div>
             </section>
             <section className="modules-box">
@@ -155,12 +166,6 @@ export default function Course() {
                 </div>
                 <div className="modules-list-box">
                     { moduleDetailsList }
-                </div>
-            </section>
-            <section className="placement-box">
-                <h1 className="poppins-reg">Our alumini work with <span className="poppins-bold">10+</span> leading CRO, KPO and Pharma companies</h1>
-                <div className="placement-img-box">
-                    <img src={ companies } />
                 </div>
             </section>
             <EndContact title={ 'Go from being a beginner to an expert with Clini Scientia' } subtitle={ 'We at Clini Scientia aim to equip you with the neccesary skills to build a successful career in Clinical Research.' } />
