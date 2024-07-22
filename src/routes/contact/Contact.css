@@ -1,25 +1,27 @@
+.contact-form-box {
+    background-color: var(--blue-primary);
+    color: white;
+}
+
 .trial-class-form {
     margin: auto;
-    max-width: 450px;
-    border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 1px 5px;
+    max-width: 500px;
     padding: 2rem;
 }
 
 .trial-class-form h1 {
     margin-bottom: 2rem;
     font-size: 2.5rem;
-    text-align: center;
 }
 
 .trial-class-form p {
     margin-bottom: 4rem;
     font-size: 1.5rem;
-    text-align: center;
 }
 
 .form-input-box input {
-    border: solid 1px var(--text-grey);
+    border: none;
+    outline: none;
     border-radius: 2rem;
     margin-bottom: 3rem;
     width: 100%;
@@ -34,18 +36,20 @@
     cursor: pointer;
 }
 
-.contact-details-box {
-    background-color: var(--blue-primary);
-    color: white;
+.contact-details-wrapper {
+    border-radius: 2rem;
+    max-width: 450px;
+    margin: auto;
+    padding: 2rem;
 }
 
 .contact-details-box h1 {
-    margin: 2rem;
+    margin-bottom: 2rem;
     font-size: 2.5rem;
 }
 
 .contact-details-box p {
-    margin: 2rem;
+    margin: 2rem 0;
     font-size: 1.5rem;
 }
 
@@ -60,7 +64,7 @@
     border-radius: 1rem;
     padding: 1rem;
     background-color: var(--blue-secondary);
-    box-shadow: rgba(0, 0, 0, 0.15) 0 1px 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 5px;
 }
 
 .contact-detail-icon svg {
@@ -73,4 +77,31 @@
 
 .contact-detail-content p {
     margin: unset;
+}
+
+@media screen and (min-width: 900px) {
+    .contact-form-box {
+        background-color: unset;
+        color: unset;
+    }
+
+    .trial-class-form {
+        padding: 4.5rem;
+        border-radius: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 1px 5px;
+        background-color: var(--blue-primary);
+        color: white;
+    }
+
+    .contact-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contact-details-wrapper {
+        max-width: 600px;
+        border: rgba(0, 0, 0, 0.15) 2px solid;
+    }
 }

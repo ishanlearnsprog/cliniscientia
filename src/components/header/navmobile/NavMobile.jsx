@@ -14,7 +14,7 @@ export default function NavMobile() {
                 { openMenu === false && <Hamburger /> }
             </button>
             { openMenu && (
-                <Fragment>
+                <div className="menu-mobile">
                     <div className="mobile-nav-backdrop" onClick={ () => setOpenMenu(false) }>
                     </div>
                     <nav className="mobile-nav-box">
@@ -28,7 +28,7 @@ export default function NavMobile() {
                     <button className="menu-button-close" onClick={ () => setOpenMenu(false) }>
                         { openMenu && <Cross /> }
                     </button>
-                </Fragment>
+                </div>
             )}
         </Fragment>
     )

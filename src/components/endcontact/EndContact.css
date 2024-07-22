@@ -16,3 +16,15 @@
     color: var(--text-white);
     text-align: center;
 }
+
+@media screen and (min-width: 600px) {
+    .end-contact-box {
+        background-color: unset;
+    }
+
+    .end-contact-card {
+        border-radius: 2rem;
+        padding: 2rem;
+        background-color: var(--blue-primary);
+    }
+}
