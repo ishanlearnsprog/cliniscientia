@@ -1,0 +1,34 @@
+.menu-desktop {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .menu-desktop {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    .menu-desktop ul {
+        margin: 0 0.5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .menu-desktop a {
+        font-size: 2rem;
+        color: var(--text-grey);
+        opacity: 0.8;
+    }
+    
+    .menu-desktop a.active {
+        color: var(--text-black);
+        opacity: 1;
+    }
+
+    .menu-desktop a:hover {
+        color: var(--text-black);
+        opacity: 1;
+    }
+}

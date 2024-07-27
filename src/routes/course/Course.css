@@ -1,0 +1,263 @@
+.hero-box {
+    background-color: var(--blue-primary);
+    color: var(--text-white);
+}
+
+.hero-content-box h1 {
+    font-size: 2.5rem;
+}
+
+.hero-content-box p {
+    font-size: 2rem;
+}
+
+.hero-details-box {
+    margin: 2rem 0;
+}
+
+.hero-details {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero-details p {
+    font-size: 1.5rem;
+}
+
+.hero-details .icon-box {
+    width: 20px;
+    height: 20px;
+}
+
+.hero-details path {
+    stroke: #ffffff;
+}
+
+.hero-details .icon-fill-white path {
+    fill: #ffffff;
+}
+
+.hero-content-box .btn {
+    width: 100%;
+    margin: 1rem 0 0;
+    text-align: center;
+}
+
+.placement-box h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.placement-img-box {
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.placement-imgb {
+    display: none;
+}
+
+.eligibility-box {
+    margin: auto;
+    max-width: 600px;
+}
+
+.eligibility-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.eligibility-box p {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+.eligibility-box p:last-child {
+    margin-bottom: 0;
+}
+
+.placement-img-box img {
+    border-radius: 2rem;
+    aspect-ratio: 3/2 auto;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.modules-intro-box {
+    border-radius: 2rem;
+    margin: auto;
+    padding: 2rem;
+    max-width: 600px;
+    background-color: var(--blue-primary);
+}
+
+.modules-intro-box h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: var(--text-white);
+}
+
+.modules-intro-box p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--text-white);
+}
+
+.modules-list-box {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    padding: 3rem;
+    border: rgba(0, 0, 0, 0.15) 2px solid;
+    border-radius: 2rem;
+}
+
+.module-details-box {
+    padding: 2rem 0;
+    border-bottom: rgba(0, 0, 0, 0.15) 2px solid;
+}
+
+.module-details-box:first-child {
+    padding: 0 0 2rem 0;
+}
+
+.module-details-box:last-child {
+    padding: 2rem 0 0 0;
+    border-bottom: unset;
+}
+
+.module-header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer
+}
+
+.module-header-box h2 {
+    font-size: 2rem;
+}
+
+.module-header-box .icon-box {
+    width: 3rem;
+    height: 3rem;
+}
+
+.module-body-box {
+    margin: 1rem 0;
+}
+
+.module-body-box p {
+    font-size: 1.5rem;
+}
+
+.module-body-box li {
+    list-style: disc inside;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 600px) {
+    .hero-box {
+        background-color: unset;
+        color: unset;
+    }
+    
+    .hero-wrapper {
+        border-radius: 2rem;
+        padding: 2rem;
+        background-color: var(--blue-primary);
+        color: var(--text-white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-content-box h1 {
+        font-size: 5rem;
+    }
+
+    .hero-content-box p {
+        font-size: 2.5rem;
+    }
+
+    .hero-details-box {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .hero-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-details .icon-box {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hero-details p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .placement-img-box {
+        max-width: 1000px;
+    }
+
+    .placement-imga {
+        display: none;
+    }
+
+    .placement-imgb {
+        display: block;
+    }
+
+    .eligibility-box {
+        max-width: 800px;
+    }
+
+    .eligibility-box h1 {
+        text-align: center;
+    }
+
+    .eligibility-wrapper {
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .eligibility-left-box {
+        flex: 1;
+    }
+    
+    .eligibility-right-box {
+        flex: 1;
+    }
+
+    .modules-box {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .modules-intro-box {
+        margin: 0 auto;
+    }
+
+    .modules-list-box {
+        margin: 0 auto;
+        width: 600px;
+        min-width: 600px;
+    }
+}
