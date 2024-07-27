@@ -36,6 +36,13 @@
     cursor: pointer;
 }
 
+.Toastify__toast-body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.5rem;
+}
+
 .contact-details-wrapper {
     border-radius: 2rem;
     max-width: 450px;

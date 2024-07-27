@@ -102,9 +102,9 @@ export default function Course() {
     const moduleDetailsList = moduleDetails.map((mod, index) => {
         return (
             <div key={ index } className="module-details-box">
-                <div className="module-header-box">
+                <div className="module-header-box" onClick={ () => toggleModuleDetails(index) }>
                     <h2 className="poppins-med">{ mod.title }</h2>
-                    <div className="toogle-module-icon" onClick={ () => toggleModuleDetails(index) }>{ showModuleBody[index] ? <Minus /> : <Plus /> }</div>
+                    <div className="toogle-module-icon">{ showModuleBody[index] ? <Minus /> : <Plus /> }</div>
                 </div>
                 { showModuleBody[index] && (
                     <div className="module-body-box">
@@ -121,6 +121,7 @@ export default function Course() {
 
     return (
         <>
+            
             <section className="hero-box">
                 <div className="hero-wrapper">
                     <div className="hero-content-box">
@@ -148,14 +149,19 @@ export default function Course() {
                         </div>
                         <Link to={ '/contact' } className="poppins-bold btn btn-primary-white">Book a trial class</Link>
                     </div>
-                    
                 </div>
             </section>
-            <section className="placement-box">
-                <h1 className="poppins-reg">Our alumini work with <span className="poppins-bold">10+</span> leading CRO, KPO and Pharma companies</h1>
-                <div className="placement-img-box">
-                    <img src={ companies } className="placement-imga" />
-                    <img src={ companies2 } className="placement-imgb" />
+            <section className="eligibility-box">
+                <h1 className="poppins-bold">This course is best suited for</h1>
+                <div className="eligibility-wrapper">
+                    <div className="eligibility-left-box">
+                        <p className="poppins-reg"><span style={{ fontWeight: '500' }}>MBBS, BDS, BAMS, BHMS</span> students and students currently pursuing graduate and post-graduate qualifications in medical and allied fields.</p>
+                        <p className="poppins-reg">Professionals working in the health and pharmaceutical sector intrested in clinical research.</p>
+                    </div>
+                    <div className="eligibility-right-box">
+                        <p className="poppins-reg">Student pursuing Pharmacy <span style={{ fontWeight: '500' }}>(B Pharm, M Pharm, Pharm D)</span>, Life Sciences <span style={{ fontWeight: '500' }}>(BSc, MSc)</span>, Engineering <span style={{ fontWeight: '500' }}>(BE, B Tech, M Tech in Biotechnology)</span>.</p>
+                        <p className="poppins-reg">Professionals engaged in clinical research and related operations.</p>
+                    </div>
                 </div>
             </section>
             <section className="modules-box">
@@ -166,6 +172,13 @@ export default function Course() {
                 </div>
                 <div className="modules-list-box">
                     { moduleDetailsList }
+                </div>
+            </section>
+            <section className="placement-box">
+                <h1 className="poppins-reg">Our alumini work with <span className="poppins-bold">10+</span> leading CRO, KPO and Pharma companies</h1>
+                <div className="placement-img-box">
+                    <img src={ companies } className="placement-imga" />
+                    <img src={ companies2 } className="placement-imgb" />
                 </div>
             </section>
             <EndContact title={ 'Go from being a beginner to an expert with Clini Scientia' } subtitle={ 'We at Clini Scientia aim to equip you with the neccesary skills to build a successful career in Clinical Research.' } />

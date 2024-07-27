@@ -8,8 +8,10 @@ export default function Footer() {
 
     return (
         <footer>
-            <LogoBox />
-            <nav>
+            <div className="footer-logo">
+                <LogoBox />
+            </div>
+            <nav className="footer-nav">
                 <ul>
                     <li><NavLink to={ '/' } className="poppins-med">Home</NavLink></li>
                     <li><NavLink to={ '/about' } className="poppins-med">About</NavLink></li>
