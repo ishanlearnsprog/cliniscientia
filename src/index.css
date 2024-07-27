@@ -121,7 +121,7 @@ section {
     align-items: center;
     gap: 1rem;
     border-radius: 2rem;
-    margin: 2rem;
+    margin: 1rem;
     padding: 1rem;
     font-size: 1.5rem;
     background-color: var(--blue-secondary);
