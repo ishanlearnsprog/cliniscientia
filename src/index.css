@@ -53,6 +53,10 @@ html {
     font-size: 10px;
 }
 
+main {
+    margin-top: 58px;
+}
+
 section {
     padding: 2rem;
     width: 100%;

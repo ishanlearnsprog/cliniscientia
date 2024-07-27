@@ -109,6 +109,7 @@
     max-width: 450px;
     margin: auto;
     padding: 2rem;
+    border: rgba(0, 0, 0, 0.15) 2px solid;
 }
 
 .contact-details-box h1 {
@@ -170,6 +171,5 @@
 
     .contact-details-wrapper {
         max-width: 600px;
-        border: rgba(0, 0, 0, 0.15) 2px solid;
     }
 }
