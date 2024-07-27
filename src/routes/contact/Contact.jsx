@@ -1,35 +1,40 @@
 import { useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Call from '../../components/svg/Call.jsx'
 import Mail from '../../components/svg/Mail.jsx'
 import './Contact.css'
 
 export default function Contact() {
-    const [ formData, setFormData ] = useState({ name: '', email: '', phoneNo: '' })
-    const [ error , setError ] = useState({ msg: ''})
+    const [ formData, setFormData ] = useState({ name: '', email: '', mobileNo: '' })
+    const [ loading, setLoading ] = useState(false)
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
         e.preventDefault()
-
-        const nameRegex = /[^a-zA-Z\s]+/
-        const emailRegex = /\S+@\S+\.\S+/
-        const phoneNoRegex = /^\d{10}$/
-
-        if (nameRegex.test(formData.name.trim()) === true ) {
-            setError({ msg: 'Only space and letters allowed in name field' })
-            return
-        }
         
-        if (emailRegex.test(fomData.email.trim()) === false ) {
-            setError({ msg: 'Please enter correct email' })
-            return
-        }
+        setLoading(true)
+
+        try {
+            const res = await fetch(import.meta.env.VITE_MAILER_URL, {
+                method: 'POST',
+                body: JSON.stringify(formData),
+                headers: { 'Content-Type': 'application/json' }
+            })
+
+            const status = res.status
+            const data = await res.json()
         
-        if (nameRegex.test(formData.name.trim()) === true ) {
-            setError({ msg: 'Please enter a 10 digit number' })
-            return
+            if (res.status === 200) {
+                toast.success( data.msg )
+            } else {
+                toast.error( data.msg )
+            }
+        } catch (err) {
+            toast.error('There was an error. Please try again later.')
         }
 
+        setLoading(false)
     }
     
     return (
@@ -63,15 +68,27 @@ export default function Contact() {
                             <input 
                             className="poppins-reg"
                             type="text"
-                            name="phoneNo"
+                            name="mobileNo"
                             placeholder="Your Phone"
-                            value={ formData.phoneNo }
-                            onChange={ (e) => setFormData({ ...formData, phoneNo: e.target.value }) }
+                            value={ formData.mobileNo }
+                            onChange={ (e) => setFormData({ ...formData, mobileNo: e.target.value }) }
                             required/>
                         </div>
-                        <button className="poppins-bold btn btn-primary-white" type="submit">Submit</button>
+                        { loading ? (<button className="poppins-bold btn btn-primary-white" type="submit" disabled>Submit</button>) : (<button className="poppins-bold btn btn-primary-white" type="submit">Submit</button>) }
                     </form>
-                    <p>{ error?.msg }</p>
+                    <ToastContainer
+                        position="bottom-center"
+                        autoClose={3000}
+                        hideProgressBar={true}
+                        newestOnTop
+                        closeOnClick
+                        rtl={false}
+                        pauseOnFocusLoss
+                        draggable
+                        pauseOnHover
+                        theme="colored"
+                        limit={3}
+                        transition: Bounce />
                 </div>
             </section>
             <section className="contact-details-box">
