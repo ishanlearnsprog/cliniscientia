@@ -76,6 +76,14 @@ export default function Contact() {
                         </div>
                         { loading ? (<button className="poppins-bold btn btn-primary-white" type="submit" disabled>Submit</button>) : (<button className="poppins-bold btn btn-primary-white" type="submit">Submit</button>) }
                     </form>
+                    { loading && (
+                        <div className="loading-screen">
+                            <div className="loading-wrapper">
+                                <div class="lds-dual-ring"></div>
+                                <p className="poppins-reg">Sending</p>
+                            </div>
+                        </div>
+                    )}
                     <ToastContainer
                         position="bottom-center"
                         autoClose={3000}
