@@ -1,0 +1,175 @@
+.contact-form-box {
+    background-color: var(--blue-primary);
+    color: white;
+}
+
+.trial-class-form {
+    margin: auto;
+    max-width: 500px;
+    padding: 2rem;
+}
+
+.trial-class-form h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.trial-class-form p {
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+}
+
+.form-input-box input {
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+.trial-class-form .btn {
+    border: unset;
+    margin: unset;
+    width: 100%;
+    cursor: pointer;
+}
+
+.Toastify__toast-body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.5rem;
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75)
+}
+
+.loading-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 1rem;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.loading-wrapper p {
+    margin: unset;
+}
+
+.lds-dual-ring {
+  color: #fff;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 5px solid currentColor;
+  border-color: currentColor transparent currentColor transparent;
+  animation: lds-dual-ring 1.5s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.contact-details-wrapper {
+    border-radius: 2rem;
+    max-width: 450px;
+    margin: auto;
+    padding: 2rem;
+    border: rgba(0, 0, 0, 0.15) 2px solid;
+}
+
+.contact-details-box h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.contact-details-box p {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+
+.contact-detail-card {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-detail-icon {
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--blue-secondary);
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 5px;
+}
+
+.contact-detail-icon svg {
+    fill: #fff;
+}
+
+.contact-detail-content h2 {
+    font-size: 2rem;
+}
+
+.contact-detail-content p {
+    margin: unset;
+}
+
+@media screen and (min-width: 900px) {
+    .contact-form-box {
+        background-color: unset;
+        color: unset;
+    }
+
+    .trial-class-form {
+        padding: 4.5rem;
+        border-radius: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 1px 5px;
+        background-color: var(--blue-primary);
+        color: white;
+    }
+
+    .contact-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contact-details-wrapper {
+        max-width: 600px;
+    }
+}
