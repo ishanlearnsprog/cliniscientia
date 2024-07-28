@@ -1,0 +1,29 @@
+.not-found-box {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found-content {
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.not-found-content h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.not-found-content h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.error-btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
