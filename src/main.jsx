@@ -7,6 +7,7 @@ import Home from './routes/home/Home.jsx'
 import About from './routes/about/About.jsx'
 import Course from './routes/course/Course.jsx'
 import Contact from './routes/contact/Contact.jsx'
+import NotFound from './routes/error/NotFound.jsx'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
             {
                 path: '/contact',
                 element: <Contact />
+            },
+            {
+                path: '/*',
+                element: <NotFound />
             }
         ]
     }
