@@ -5,6 +5,6 @@ import './LogoBox.css'
 
 export default function LogoBox() {
     return (
-        <Link to={ '/' } className="logo-box poppins-bold"><Logo />Clini Scientia</Link>
+        <Link to={ '/' } className="logo-box poppins-bold">Clini Scientia</Link>
     )
 }

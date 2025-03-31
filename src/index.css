@@ -54,7 +54,13 @@ html {
 }
 
 main {
-    margin-top: 58px;
+    margin-top: 85px;
+}
+
+.logo-primary {
+    display: block;
+    margin: auto;
+    width: 300px;
 }
 
 section {
@@ -124,10 +130,11 @@ section {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    border-radius: 2rem;
+    border-radius: 50%;
     margin: 1rem;
     padding: 1rem;
     font-size: 1.5rem;
     background-color: var(--blue-secondary);
     color: var(--text-white);
+    cursor: pointer;
 }
