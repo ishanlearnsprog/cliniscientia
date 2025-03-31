@@ -1,9 +1,10 @@
 footer {
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .footer-logo {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -21,7 +22,7 @@ footer {
 }
 
 .footer-nav a {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--text-grey);
     opacity: 0.8;
 }

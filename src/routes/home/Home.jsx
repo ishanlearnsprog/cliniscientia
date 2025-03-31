@@ -2,11 +2,14 @@ import { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 
 import EndContact from '../../components/endcontact/EndContact.jsx'
+import Placement from '../../components/placement/Placement.jsx'
 import image1 from '../../assets/images/image1.jpg'
 import image2 from '../../assets/images/image2.jpg'
+import logo from '../../assets/images/logo.jpg'
+import courseCDM from '../../assets/images/courseCDM.jpg'
 import Quotes from '../../components/svg/Quotes.jsx'
 import Logo from '../../components/svg/Logo.jsx'
-import People from '../../components/svg/People.jsx'
+import Certified from '../../components/svg/Certified.jsx'
 import Syllabus from '../../components/svg/Syllabus.jsx'
 import Monitor from '../../components/svg/Monitor.jsx'
 import Clock from '../../components/svg/Clock.jsx'
@@ -18,8 +21,9 @@ export default function Home() {
         <Fragment>
             <section className="intro-box">
                 <div className="intro-content-box">
+                    <img className="logo-primary" src={ logo } />
                     <h1 className="poppins-bold">Learn Clinical Data Management &#x26; Clinical Research</h1>
-                    <p className="poppins-med">Launch your career in Clinical Research with our online one-on-one course.</p>
+                    <p className="poppins-med">Launch your career in Clinical Research with our online classes & hands-on training.</p>
                     <div className="intro-img-box intro-imga-box">
                         <img src={ image1 } />
                     </div>
@@ -32,13 +36,12 @@ export default function Home() {
                 </div>
             </section>
             <section className="services-box" id="intro-info">
-                <h1 className="poppins-bold">Take a deep dive in the world of Clinical Research with us</h1>
                 <div className="services-cards-box">
                     <div className="services-card">
-                        <People />
+                        <Certified />
                         <div className="services-card-content">
-                            <h2 className="poppins-bold">One On One Learning</h2>
-                            <p className="poppins-reg">Get personalied guidance from an experienced data manager.</p>
+                            <h2 className="poppins-bold">ISO 9001: 2015 Certfied</h2>
+                            <p className="poppins-reg">Learn from experienced prossionals in a certified training program.</p>
                         </div>
                     </div>
                     <div className="services-card">
@@ -65,103 +68,28 @@ export default function Home() {
                 </div>
             </section>
             <section className="course-box">
-                <div className="course-card-box">
-                    <div className="section-icon-box">
-                        <Logo />
+                <h1 className="poppins-bold">Take a deep dive in the world of Clinical Research with our course</h1>
+                <div className="course-wrapper">
+                    <div className="course-image">
+                        <img src={ courseCDM } />
                     </div>
-                    <h1 className="poppins-bold">Course Structure</h1>
-                    <p className="poppins-reg">The course covers the basics of Clinical Data Management (CDM) and then expands on the techniques employed by professionals.</p>
-                    <div className="course-intro-box">
-                        <div className="course-info-card">
-                            <div className="course-info-card-img-box">
-                                <div className="course-info-card-icon-box">
-                                    <div className="course-info-card-icon-border-box">
-                                        <Syllabus />
-                                    </div>
-                                </div>
-                                <p className="poppins-reg">Preview Coming Soon</p>
-                            </div>
-                            <div className="course-info-card-content-box">
-                                <h2 className="poppins-bold">Introduction</h2>
-                                <p className="poppins-reg">What is CDM, why it is needed preview of what you will learn in the course.</p>
-                            </div>
-                        </div>
-                        <div className="course-info-card">
-                            <div className="course-info-card-img-box">
-                                <div className="course-info-card-icon-box">
-                                    <div className="course-info-card-icon-border-box">
-                                        <Syllabus />
-                                    </div>
-                                </div>
-                                <p className="poppins-reg">Preview Coming Soon</p>
-                            </div>
-                            <div className="course-info-card-content-box">
-                                <h2 className="poppins-bold">Tools &#x26; Tutorial</h2>
-                                <p className="poppins-reg">Introduction and hands-on training of the commonly used tools in a CDM project.</p>
-                            </div>
-                        </div>
-                        <div className="course-info-card">
-                            <div className="course-info-card-img-box">
-                                <div className="course-info-card-icon-box">
-                                    <div className="course-info-card-icon-border-box">
-                                        <Syllabus />
-                                    </div>
-                                </div>
-                                <p className="poppins-reg">Preview Coming Soon</p>
-                            </div>
-                            <div className="course-info-card-content-box">
-                                <h2 className="poppins-bold">Project Phase 1: Start Up Phase</h2>
-                                <p className="poppins-reg">Introduction to various specifications and steps taken at the start of a CDM project.</p>
-                            </div>
-                        </div>
-                        <div className="course-info-card">
-                            <div className="course-info-card-img-box">
-                                <div className="course-info-card-icon-box">
-                                    <div className="course-info-card-icon-border-box">
-                                        <Syllabus />
-                                    </div>
-                                </div>
-                                <p className="poppins-reg">Preview Coming Soon</p>
-                            </div>
-                            <div className="course-info-card-content-box">
-                                <h2 className="poppins-bold">Project Phase 2: Conduct Phase</h2>
-                                <p className="poppins-reg">Explanation and hands-on training of the daily activities required in a CDM project.</p>
-                            </div>
-                        </div>
-                        <div className="course-info-card">
-                            <div className="course-info-card-img-box">
-                                <div className="course-info-card-icon-box">
-                                    <div className="course-info-card-icon-border-box">
-                                        <Syllabus />
-                                    </div> 
-                                </div>
-                                <p className="poppins-reg">Preview Coming Soon</p>
-                            </div>
-                            <div className="course-info-card-content-box">
-                                <h2 className="poppins-bold">Project Phase 3: Close Out Phase</h2>
-                                <p className="poppins-reg">Highlights the procedures &#x26; protocols followed while closing a CDM project.</p>
-                            </div>
-                        </div>
-                        <div className="course-info-card">
-                            <div className="course-info-card-img-box">
-                                <div className="course-info-card-icon-box">
-                                    <div className="course-info-card-icon-border-box">
-                                        <Syllabus />
-                                    </div>
-                                </div>
-                                <p className="poppins-reg">Preview Coming Soon</p>
-                            </div>
-                            <div className="course-info-card-content-box">
-                                <h2 className="poppins-bold">Best Practises &#x26; Intrview Guide</h2>
-                                <p className="poppins-reg">A guide to enhancing your CDM workflow and how to get a job as a data manager.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="section-btn-box">
-                        <Link to={ '/course' } className="poppins-bold btn btn-primary-white">More Course Details</Link>
+                    <div className="course-content">
+                        <p class="poppins-reg">Clini Scientia's</p>
+                        <h1 class="poppins-bold">Clinical Data Management</h1>
+                        <ul class="poppins-reg">
+                            <li>Suitable for both beginner and advanced learners.</li>
+                            <li>Comprehensive syllabus that covers data maniplulation & analysis, project lifecycle & interview preparation material.</li>
+                            <li>Hands-on training to match industry standards.</li>
+                            <li>Completion certficate provided after course completion.</li>
+                        </ul>
+                        <div className="section-btn-box">
+                            <Link to={ '/course' } className="btn btn-primary-white poppins-bold">Course Details</Link>
+                            <Link to={ '/contact' } className="btn btn-primary-white poppins-bold">Start Learning</Link>
+                        </div>       
                     </div>
                 </div>
             </section>
+            <Placement />
             <section className="reviews-box">
                 <div className="reviews-img-box">
                     <img src={ image2 } />

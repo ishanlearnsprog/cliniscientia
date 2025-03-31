@@ -1,7 +1,8 @@
 import { Fragment } from 'react'
 import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-import LogoBox from '../logobox/LogoBox.jsx'
+import logo from '../../assets/images/logo.jpg'
 import './Footer.css'
 
 export default function Footer() {
@@ -9,7 +10,7 @@ export default function Footer() {
     return (
         <footer>
             <div className="footer-logo">
-                <LogoBox />
+                <Link to={ '/' } className="logo-box poppins-bold"><img className="logo-primary" src={ logo } /></Link>
             </div>
             <nav className="footer-nav">
                 <ul>

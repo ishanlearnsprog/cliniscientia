@@ -6,11 +6,11 @@ import Header from '../../components/header/Header.jsx'
 import Footer from '../../components/footer/Footer.jsx'
 
 export default function App() {
-    const { key } = useLocation()
+    let location = useLocation()
 
     useEffect(() => {
         window.scrollTo(0, 0)
-    }, [ key ])
+    }, [ location ])
 
     return (
         <Fragment>
@@ -19,7 +19,7 @@ export default function App() {
                 <Outlet />
             </main>
             <Footer />
-            <a href={ import.meta.env.VITE_WHATSAPP_URL } target="_blank" rel="noopener noreferrer" className="whatsapp-box poppins-med"><Whatsapp />Connect on Whatsapp</a>
+            <a href="https://wa.me/919250323387" target="_blank" rel="noopener noreferrer" className="whatsapp-box poppins-med"><Whatsapp /></a>
         </Fragment>
     )
 }

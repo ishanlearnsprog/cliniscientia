@@ -1,0 +1,45 @@
+.placement-box {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.placement-box h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.placement-scroll-box {
+    padding: 2rem;
+    height: 10rem;
+    background-color: var(--blue-primary);
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.placement-items-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4rem;
+    font-size: 3rem;
+    animation: scrollLeft 30s linear infinite;
+}
+
+@keyframes scrollLeft {
+    to {
+        transform: translateX(calc(-100% - 4rem));
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .placement-box {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .placement-scroll-box {
+        border-radius: 2rem;
+    }
+}

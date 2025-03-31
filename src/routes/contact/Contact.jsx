@@ -110,7 +110,7 @@ export default function Contact() {
                             </div>
                             <div className="contact-detail-content">
                                 <h2 className="poppins-med">Phone Number</h2>
-                                <p className="poppins-reg">{ import.meta.env.VITE_PHONENO }</p>
+                                <p className="poppins-reg">+91 92503 23387</p>
                             </div>
                         </div>
                         <div className="contact-detail-card">
@@ -119,7 +119,7 @@ export default function Contact() {
                             </div>
                             <div className="contact-detail-content">
                                 <h2 className="poppins-med">Email Address</h2>
-                                <p className="poppins-reg">{ import.meta.env.VITE_EMAIL }</p>
+                                <p className="poppins-reg">info@cliniscientia.com</p>
                             </div>
                         </div>
                     </div>

@@ -2,14 +2,13 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import EndContact from '../../components/endcontact/EndContact.jsx'
+import Placement from '../../components/placement/Placement.jsx'
 import Plus from '../../components/svg/Plus.jsx'
 import Minus from '../../components/svg/Minus.jsx'
 import Like from '../../components/svg/Like.jsx'
 import Clock from '../../components/svg/Clock.jsx'
 import People from '../../components/svg/People.jsx'
 import Language from '../../components/svg/Language.jsx'
-import companies from '../../assets/images/companies.png'
-import companies2 from '../../assets/images/companies2.png'
 import './Course.css'
 
 export default function Course() {
@@ -85,13 +84,13 @@ export default function Course() {
         }
     ]
 
-    const [ showModuleBody, setShowModuleBody ] = useState(Array(moduleDetails.length).fill(false))
+    const [ showModuleBody, setShowModuleBody ] = useState([true, false, false, false, false, false])
 
     function toggleModuleDetails(index) {
         let moduleBodies = showModuleBody
         for ( let i = 0; i < moduleBodies.length; i++ ) {
             if ( i === index ) {
-                moduleBodies[i] = !moduleBodies[i]
+                moduleBodies[i] = true
             } else {
                 moduleBodies[i] = false
             }
@@ -151,21 +150,13 @@ export default function Course() {
                     </div>
                 </div>
             </section>
-            <section className="eligibility-box">
-                <h1 className="poppins-bold">This course is best suited for</h1>
-                <div className="eligibility-wrapper">
-                    <div className="eligibility-left-box">
-                        <p className="poppins-reg"><span style={{ fontWeight: '500' }}>MBBS, BDS, BAMS, BHMS</span> students and students currently pursuing graduate and post-graduate qualifications in medical and allied fields.</p>
-                        <p className="poppins-reg">Professionals working in the health and pharmaceutical sector intrested in clinical research.</p>
-                    </div>
-                    <div className="eligibility-right-box">
-                        <p className="poppins-reg">Student pursuing Pharmacy <span style={{ fontWeight: '500' }}>(B Pharm, M Pharm, Pharm D)</span>, Life Sciences <span style={{ fontWeight: '500' }}>(BSc, MSc)</span>, Engineering <span style={{ fontWeight: '500' }}>(BE, B Tech, M Tech in Biotechnology)</span>.</p>
-                        <p className="poppins-reg">Professionals engaged in clinical research and related operations.</p>
-                    </div>
-                </div>
-            </section>
             <section className="modules-box">
                 <div className="modules-intro-box">
+                    <h1 className="poppins-bold">The course is best suited for</h1>
+                    <p className="poppins-reg"><span style={{ fontWeight: '500' }}>MBBS, BDS, BAMS, BHMS</span> students and students currently pursuing graduate and post-graduate qualifications in medical and allied fields.</p>
+                    <p className="poppins-reg">Student pursuing Pharmacy <span style={{ fontWeight: '500' }}>(B Pharm, M Pharm, Pharm D)</span>, Life Sciences <span style={{ fontWeight: '500' }}>(BSc, MSc)</span>, Engineering <span style={{ fontWeight: '500' }}>(BE, B Tech, M Tech in Biotechnology)</span>.</p>
+                    <p className="poppins-reg">Professionals working in the health and pharmaceutical sector intrested in clinical research.</p>
+                    <p className="poppins-reg">Professionals engaged in clinical research and related operations.</p>
                     <h1 className="poppins-bold">The course is divided into 6 modules.</h1>
                     <p className="poppins-reg">The first two modules of the course cover the basics required to work in a CDM project. They build the foundation for the beginner learner and act as a revision for the advanced learner.</p>
                     <p className="poppins-reg">The other four modules cover the project lifecycle of a CDM project. The course has been structured to allow the beginner learner to gain familiarity with the the project while the advanced learner will hopefully find helpful ideas to optimize their own workflows.</p>
@@ -174,14 +165,8 @@ export default function Course() {
                     { moduleDetailsList }
                 </div>
             </section>
-            <section className="placement-box">
-                <h1 className="poppins-reg">Our alumini work with <span className="poppins-bold">10+</span> leading CRO, KPO and Pharma companies</h1>
-                <div className="placement-img-box">
-                    <img src={ companies } className="placement-imga" />
-                    <img src={ companies2 } className="placement-imgb" />
-                </div>
-            </section>
-            <EndContact title={ 'Go from being a beginner to an expert with Clini Scientia' } subtitle={ 'We at Clini Scientia aim to equip you with the neccesary skills to build a successful career in Clinical Research.' } />
+           <Placement />
+           <EndContact title={ 'Go from being a beginner to an expert with Clini Scientia' } subtitle={ 'We at Clini Scientia aim to equip you with the neccesary skills to build a successful career in Clinical Research.' } />
         </>
     )
 }
