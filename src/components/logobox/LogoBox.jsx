@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
+import logo from '../../assets/images/logo.jpg'
 
 import Logo from '../svg/Logo.jsx'
 import './LogoBox.css'
 
 export default function LogoBox() {
     return (
-        <Link to={ '/' } className="logo-box poppins-bold">Clini Scientia</Link>
+        <img className="logo-primary" src={ logo } />
     )
 }

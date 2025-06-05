@@ -5,10 +5,8 @@ import EndContact from '../../components/endcontact/EndContact.jsx'
 import Placement from '../../components/placement/Placement.jsx'
 import image1 from '../../assets/images/image1.jpg'
 import image2 from '../../assets/images/image2.jpg'
-import logo from '../../assets/images/logo.jpg'
 import courseCDM from '../../assets/images/courseCDM.jpg'
 import Quotes from '../../components/svg/Quotes.jsx'
-import Logo from '../../components/svg/Logo.jsx'
 import Certified from '../../components/svg/Certified.jsx'
 import Syllabus from '../../components/svg/Syllabus.jsx'
 import Monitor from '../../components/svg/Monitor.jsx'
@@ -21,7 +19,6 @@ export default function Home() {
         <Fragment>
             <section className="intro-box">
                 <div className="intro-content-box">
-                    <img className="logo-primary" src={ logo } />
                     <h1 className="poppins-bold">Learn Clinical Data Management &#x26; Clinical Research</h1>
                     <p className="poppins-med">Launch your career in Clinical Research with our online classes & hands-on training.</p>
                     <div className="intro-img-box intro-imga-box">
