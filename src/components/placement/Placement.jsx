@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 import './Placement.css'
 
 export default function EndContact({ title, subtitle }) {

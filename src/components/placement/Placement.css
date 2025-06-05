@@ -1,6 +1,7 @@
 .placement-box {
     padding-left: 0rem;
     padding-right: 0rem;
+    overflow: hidden;
 }
 
 .placement-box h1 {
