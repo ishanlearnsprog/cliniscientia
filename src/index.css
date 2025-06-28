@@ -119,17 +119,18 @@ section {
 .whatsapp-box {
     position: fixed;
     bottom: 0;
-    left: 0;
+    right: 0;
     z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    border-radius: 50%;
-    margin: 1rem;
+    border-radius: 1rem;
+    margin: 2rem;
     padding: 1rem;
     font-size: 1.5rem;
-    background-color: var(--blue-secondary);
+    background-color: #25d366;
     color: var(--text-white);
     cursor: pointer;
+}
+
+.icon-box {
+    width: 30px;
+    height: 30px;
 }

@@ -1,5 +1,3 @@
-import './svg.css'
-
 export default function Logo() {
     return (
         <div className="icon-box">

@@ -65,25 +65,21 @@ export default function Home() {
                 </div>
             </section>
             <section className="course-box">
+                <img src={ courseCDM } />
                 <h1 className="poppins-bold">Take a deep dive in the world of Clinical Research with our course</h1>
-                <div className="course-wrapper">
-                    <div className="course-image">
-                        <img src={ courseCDM } />
-                    </div>
-                    <div className="course-content">
-                        <p class="poppins-reg">Clini Scientia's</p>
-                        <h1 class="poppins-bold">Clinical Data Management</h1>
-                        <ul class="poppins-reg">
-                            <li>Suitable for both beginner and advanced learners.</li>
-                            <li>Comprehensive syllabus that covers data maniplulation & analysis, project lifecycle & interview preparation material.</li>
-                            <li>Hands-on training to match industry standards.</li>
-                            <li>Completion certficate provided after course completion.</li>
-                        </ul>
-                        <div className="section-btn-box">
-                            <Link to={ '/course' } className="btn btn-primary-white poppins-bold">Course Details</Link>
-                            <Link to={ '/contact' } className="btn btn-primary-white poppins-bold">Start Learning</Link>
-                        </div>       
-                    </div>
+                <div className="course-content">
+                    <p className="poppins-reg">Clini Scientia's</p>
+                    <h1 className="poppins-bold">Clinical Data Management</h1>
+                    <ul className="poppins-reg">
+                        <li>Suitable for both beginner and advanced learners.</li>
+                        <li>Comprehensive syllabus that covers data maniplulation & analysis, project lifecycle & interview preparation material.</li>
+                        <li>Hands-on training to match industry standards.</li>
+                        <li>Completion certficate provided after course completion.</li>
+                    </ul>
+                    <div className="section-btn-box">
+                        <Link to={ '/course' } className="btn btn-primary-white poppins-bold">Course Details</Link>
+                        <Link to={ '/contact' } className="btn btn-primary-white poppins-bold">Start Learning</Link>
+                    </div>       
                 </div>
             </section>
             <Placement />

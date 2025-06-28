@@ -1,43 +1,43 @@
 import './Placement.css'
 
-export default function EndContact({ title, subtitle }) {
+export default function Placement() {
     return (
         <section className="placement-box">
-            <h1 className="poppins-reg">Our alumini work with <span className="poppins-bold">10+</span> leading CRO, KPO and Pharma companies</h1>
+            <h1 className="poppins-bold">Get placed at leading CRO, KPO and Pharma companies</h1>
             <div className="placement-scroll-box poppins-bold">
-                <div class="placement-items-wrapper">
-                    <div class="placement-item">IQVIA</div>
-                    <div class="placement-item">LABCORP</div>
-                    <div class="placement-item">PFIZER</div>
-                    <div class="placement-item">JOHNSON&JOHNSON</div>
-                    <div class="placement-item">GSK</div>
-                    <div class="placement-item">BIOCON</div>
-                    <div class="placement-item">PAREXEL</div>
-                    <div class="placement-item">ALLUCENT</div>
-                    <div class="placement-item">CYTEL</div>
-                    <div class="placement-item">EXCELYA</div>
-                    <div class="placement-item">ICON</div>
-                    <div class="placement-item">TCS</div>
-                    <div class="placement-item">ACCENTURE</div>
-                    <div class="placement-item">CONGNIZANT</div>
-                    <div class="placement-item">IBM</div>
+                <div className="placement-items-wrapper">
+                    <div className="placement-item">IQVIA</div>
+                    <div className="placement-item">LABCORP</div>
+                    <div className="placement-item">PFIZER</div>
+                    <div className="placement-item">JOHNSON&JOHNSON</div>
+                    <div className="placement-item">GSK</div>
+                    <div className="placement-item">BIOCON</div>
+                    <div className="placement-item">PAREXEL</div>
+                    <div className="placement-item">ALLUCENT</div>
+                    <div className="placement-item">CYTEL</div>
+                    <div className="placement-item">EXCELYA</div>
+                    <div className="placement-item">ICON</div>
+                    <div className="placement-item">TCS</div>
+                    <div className="placement-item">ACCENTURE</div>
+                    <div className="placement-item">CONGNIZANT</div>
+                    <div className="placement-item">IBM</div>
                </div>
-               <div aria-hidden="true" class="placement-items-wrapper">
-                    <div class="placement-item">IQVIA</div>
-                    <div class="placement-item">LABCORP</div>
-                    <div class="placement-item">PFIZER</div>
-                    <div class="placement-item">JOHNSON&JOHNSON</div>
-                    <div class="placement-item">GSK</div>
-                    <div class="placement-item">BIOCON</div>
-                    <div class="placement-item">PAREXEL</div>
-                    <div class="placement-item">ALLUCENT</div>
-                    <div class="placement-item">CYTEL</div>
-                    <div class="placement-item">EXCELYA</div>
-                    <div class="placement-item">ICON</div>
-                    <div class="placement-item">TCS</div>
-                    <div class="placement-item">ACCENTURE</div>
-                    <div class="placement-item">CONGNIZANT</div>
-                    <div class="placement-item">IBM</div>
+               <div aria-hidden="true" className="placement-items-wrapper">
+                    <div className="placement-item">IQVIA</div>
+                    <div className="placement-item">LABCORP</div>
+                    <div className="placement-item">PFIZER</div>
+                    <div className="placement-item">JOHNSON&JOHNSON</div>
+                    <div className="placement-item">GSK</div>
+                    <div className="placement-item">BIOCON</div>
+                    <div className="placement-item">PAREXEL</div>
+                    <div className="placement-item">ALLUCENT</div>
+                    <div className="placement-item">CYTEL</div>
+                    <div className="placement-item">EXCELYA</div>
+                    <div className="placement-item">ICON</div>
+                    <div className="placement-item">TCS</div>
+                    <div className="placement-item">ACCENTURE</div>
+                    <div className="placement-item">CONGNIZANT</div>
+                    <div className="placement-item">IBM</div>
                </div>
             </div>
         </section>

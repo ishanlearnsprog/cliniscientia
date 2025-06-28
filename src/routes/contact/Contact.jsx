@@ -22,13 +22,13 @@ export default function Contact() {
                 headers: { 'Content-Type': 'application/json' }
             })
 
-            const status = res.status
             const data = await res.json()
         
             if (res.status === 200) {
-                toast.success( data.msg )
+                toast.success(data.msg)
+                setFormData({ name: '', email: '', mobileNo: '' })
             } else {
-                toast.error( data.msg )
+                toast.error(data.msg)
             }
         } catch (err) {
             toast.error('There was an error. Please try again later.')
@@ -79,7 +79,7 @@ export default function Contact() {
                     { loading && (
                         <div className="loading-screen">
                             <div className="loading-wrapper">
-                                <div class="lds-dual-ring"></div>
+                                <div className="lds-dual-ring"></div>
                                 <p className="poppins-reg">Sending</p>
                             </div>
                         </div>

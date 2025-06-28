@@ -78,9 +78,13 @@
 }
 
 .course-box {
-    background-color: var(--blue-primary);
     color: var(--text-white);
     margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .course-box h1 {
@@ -89,27 +93,26 @@
     text-align: center;
 }
 
-.course-wrapper {
-    margin: 5rem 0;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--blue-secondary);
-}
-
-.course-image img {
+.course-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    border-radius: 2rem 2rem 0 0;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(25%);
 }
 
 .course-content {
+    max-width: 50rem;
+    border-radius: 2rem;
     margin: 2rem;
+    padding: 2rem;
+    background-color: var(--blue-secondary);
 }
 
 .course-content p {
-    font-size: 1.5rem;
+        font-size: 1.5rem;
 }
 
 .course-content h1 {
@@ -260,30 +263,6 @@
         justify-contnet: center;
         align-items: center;
         flex-direction: column;
-    }
-
-    .course-wrapper {
-        max-width: 90rem;
-        flex-direction: row;
-        position: relative;
-    }
-
-    .course-image {
-        width: 48%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        overflow: hidden;
-        display: flex;
-    }
-
-    .course-image img {
-        border-radius: 2rem 0 0 2rem;
-    }
-
-    .course-content {
-        margin-left: 50%;
     }
 
     .reviews-box {
