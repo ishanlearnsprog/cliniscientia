@@ -16,10 +16,10 @@ export default function Course() {
     const moduleDetails = [
         {
             title: 'Introduction',
-            subtitle: 'Introduction to CDM, why it is needed and preview of what comes next in the course.',
+            subtitle: 'Introduction to CDM, why it is needed, and a preview of what comes next in the course.',
             topics: [
                 'Introduction to CDM',
-                'Why it is needed?',
+                'Why is it needed?',
                 'Future Opportunities',
                 'Introduction to important terminology'
             ]
@@ -34,7 +34,7 @@ export default function Course() {
             ]
         },
         {
-            title: 'Project Phase 1: Start Up Phase',
+            title: 'Project Phase 1: Start-Up Phase',
             subtitle: 'Introduction to various specifications and steps taken at the start of a CDM project.',
             topics: [
                 'Protocols',
@@ -55,14 +55,14 @@ export default function Course() {
                 'Query Writing',
                 'Data Entry',
                 'Listing Review',
-                'Discpepency Management',
+                'Discrepancy Management',
                 'External Data Review',
                 'SAE Reconciliation',
                 'Protocol Amendment'
             ]
         },
         {
-            title: 'Project Phase 3: Close Out Phase',
+            title: 'Project Phase 3: Close-Out Phase',
             subtitle: 'Highlights the procedures & protocols followed while closing a CDM project.',
             topics: [
                 'Site Closing Activity',
@@ -74,10 +74,10 @@ export default function Course() {
             ]
         },
         {
-            title: 'Best Practises & Interview Guide',
+            title: 'Best Practices & Interview Guide',
             subtitle: 'A guide to enhancing your CDM workflow and how to get a job as a data manager.',
             topics: [
-                'Best practises',
+                'Best practices',
                 'Career guidance',
                 'Interview preparation'
             ]
@@ -95,7 +95,7 @@ export default function Course() {
                 moduleBodies[i] = false
             }
         }
-        setShowModuleBody([ ...moduleBodies ])
+        setShowModuleBody([...moduleBodies])
     }
 
     const moduleDetailsList = moduleDetails.map((mod, index) => {
@@ -120,7 +120,6 @@ export default function Course() {
 
     return (
         <>
-            
             <section className="hero-box">
                 <div className="hero-wrapper">
                     <div className="hero-content-box">
@@ -153,20 +152,20 @@ export default function Course() {
             <section className="modules-box">
                 <div className="modules-intro-box">
                     <h1 className="poppins-bold">The course is best suited for</h1>
-                    <p className="poppins-reg"><span style={{ fontWeight: '500' }}>MBBS, BDS, BAMS, BHMS</span> students and students currently pursuing graduate and post-graduate qualifications in medical and allied fields.</p>
-                    <p className="poppins-reg">Student pursuing Pharmacy <span style={{ fontWeight: '500' }}>(B Pharm, M Pharm, Pharm D)</span>, Life Sciences <span style={{ fontWeight: '500' }}>(BSc, MSc)</span>, Engineering <span style={{ fontWeight: '500' }}>(BE, B Tech, M Tech in Biotechnology)</span>.</p>
-                    <p className="poppins-reg">Professionals working in the health and pharmaceutical sector intrested in clinical research.</p>
+                    <p className="poppins-reg"><span style={{ fontWeight: '500' }}>MBBS, BDS, BAMS, and BHMS</span> students and students currently pursuing graduate and postgraduate qualifications in medical and allied fields.</p>
+                    <p className="poppins-reg">Student pursuing Pharmacy <span style={{ fontWeight: '500' }}>(B Pharm, M Pharm, Pharm D)</span>, Life Sciences <span style={{ fontWeight: '500' }}>(BSc, MSc)</span>, or Engineering <span style={{ fontWeight: '500' }}>(BE, B Tech, M Tech in Biotechnology)</span>.</p>
+                    <p className="poppins-reg">Professionals working in the health and pharmaceutical sector interested in clinical research.</p>
                     <p className="poppins-reg">Professionals engaged in clinical research and related operations.</p>
                     <h1 className="poppins-bold">The course is divided into 6 modules.</h1>
                     <p className="poppins-reg">The first two modules of the course cover the basics required to work in a CDM project. They build the foundation for the beginner learner and act as a revision for the advanced learner.</p>
-                    <p className="poppins-reg">The other four modules cover the project lifecycle of a CDM project. The course has been structured to allow the beginner learner to gain familiarity with the the project while the advanced learner will hopefully find helpful ideas to optimize their own workflows.</p>
+                    <p className="poppins-reg">The other four modules cover the project lifecycle of a CDM project. The course has been structured to allow the beginner learner to gain familiarity with the project while the advanced learner will hopefully find helpful ideas to optimize their own workflows.</p>
                 </div>
                 <div className="modules-list-box">
                     { moduleDetailsList }
                 </div>
             </section>
-           <Placement />
-           <EndContact title={ 'Go from being a beginner to an expert with Clini Scientia' } subtitle={ 'We at Clini Scientia aim to equip you with the neccesary skills to build a successful career in Clinical Research.' } />
+            <Placement />
+            <EndContact title={ 'Go from being a beginner to an expert with Clini Scientia' } subtitle={ 'We at Clini Scientia aim to equip you with the neccesary skills to build a successful career in Clinical Research.' } />
         </>
     )
 }

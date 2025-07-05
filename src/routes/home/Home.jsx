@@ -38,14 +38,14 @@ export default function Home() {
                         <Certified />
                         <div className="services-card-content">
                             <h2 className="poppins-bold">ISO 9001: 2015 Certfied</h2>
-                            <p className="poppins-reg">Learn from experienced prossionals in a certified training program.</p>
+                            <p className="poppins-reg">Learn from experienced professionals in a certified training program.</p>
                         </div>
                     </div>
                     <div className="services-card">
                         <Syllabus />
                         <div className="services-card-content">
                             <h2 className="poppins-bold">Comprehensive Material</h2>
-                            <p className="poppins-reg">Equips the learner with the essential skills needed for a successful carrer.</p>
+                            <p className="poppins-reg">Equips the learner with the essential skills needed for a successful career.</p>
                         </div>
                     </div>
                     <div className="services-card">
@@ -66,15 +66,15 @@ export default function Home() {
             </section>
             <section className="course-box">
                 <img src={ courseCDM } />
-                <h1 className="poppins-bold">Take a deep dive in the world of Clinical Research with our course</h1>
+                <h1 className="poppins-bold">Take a deep dive into the world of clinical research with our course</h1>
                 <div className="course-content">
                     <p className="poppins-reg">Clini Scientia's</p>
                     <h1 className="poppins-bold">Clinical Data Management</h1>
                     <ul className="poppins-reg">
-                        <li>Suitable for both beginner and advanced learners.</li>
-                        <li>Comprehensive syllabus that covers data maniplulation & analysis, project lifecycle & interview preparation material.</li>
-                        <li>Hands-on training to match industry standards.</li>
-                        <li>Completion certficate provided after course completion.</li>
+                        <li>Designed for both beginners and advanced learners</li>
+                        <li>Covers data manipulation & analysis, project lifecycle, and interview preparation</li>
+                        <li>Hands-on training aligned with industry standards</li>
+                        <li>Certificate awarded upon successful course completion</li>
                     </ul>
                     <div className="section-btn-box">
                         <Link to={ '/course' } className="btn btn-primary-white poppins-bold">Course Details</Link>
@@ -103,7 +103,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <EndContact title={ 'Join 100+ students already learning with Clini Scientia' } subtitle={ 'We at Clini Scientia aim to equip you with the neccesary skills to build a successful career in Clinical Research.' }/>
+            <EndContact title={ 'Join 100+ students already learning with Clini Scientia' } subtitle={ 'We at Clini Scientia aim to equip you with the necessary skills to build a successful career in Clinical Research.' }/>
         </Fragment>
     )
 }

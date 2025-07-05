@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import courseCDM from '../../assets/images/courseCDM.jpg'
 import Call from '../../components/svg/Call.jsx'
 import Mail from '../../components/svg/Mail.jsx'
 import './Contact.css'
@@ -39,10 +40,11 @@ export default function Contact() {
     
     return (
         <div className="contact-wrapper">
+            <img src={ courseCDM } />
             <section className="contact-form-box">
                 <div className="trial-class-form">
-                    <h1 className="poppins-bold">Book A Trial Class</h1>
-                    <p className="poppins-reg">Enroll for a trial class and make sure this course right for you. Connect with our instructor to discuss about career options and course details.</p>
+                    <h1 className="poppins-bold">Book a Trial Class</h1>
+                    <p className="poppins-reg">Enroll for a trial class and make sure this course is right for you. Connect with our instructor to discuss career options and course details.</p>
                     <form onSubmit={ handleSubmit }>
                         <div className="form-input-box">
                             <input

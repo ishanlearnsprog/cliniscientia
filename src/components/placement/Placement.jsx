@@ -3,7 +3,7 @@ import './Placement.css'
 export default function Placement() {
     return (
         <section className="placement-box">
-            <h1 className="poppins-bold">Get placed at leading CRO, KPO and Pharma companies</h1>
+            <h1 className="poppins-bold">Launch your career with leading CROs, KPOs, and Pharmaceutical companies</h1>
             <div className="placement-scroll-box poppins-bold">
                 <div className="placement-items-wrapper">
                     <div className="placement-item">IQVIA</div>
@@ -19,7 +19,7 @@ export default function Placement() {
                     <div className="placement-item">ICON</div>
                     <div className="placement-item">TCS</div>
                     <div className="placement-item">ACCENTURE</div>
-                    <div className="placement-item">CONGNIZANT</div>
+                    <div className="placement-item">COGNIZANT</div>
                     <div className="placement-item">IBM</div>
                </div>
                <div aria-hidden="true" className="placement-items-wrapper">
@@ -36,7 +36,7 @@ export default function Placement() {
                     <div className="placement-item">ICON</div>
                     <div className="placement-item">TCS</div>
                     <div className="placement-item">ACCENTURE</div>
-                    <div className="placement-item">CONGNIZANT</div>
+                    <div className="placement-item">COGNIZANT</div>
                     <div className="placement-item">IBM</div>
                </div>
             </div>

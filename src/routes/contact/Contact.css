@@ -1,3 +1,18 @@
+.contact-wrapper {
+    position: relative;
+}
+
+.contact-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(25%);
+}
+
 .contact-form-box {
     background-color: var(--blue-primary);
     color: white;
@@ -105,6 +120,8 @@
 }
 
 .contact-details-wrapper {
+    background-color: var(--text-white);
+    color: var(--text-black);
     border-radius: 2rem;
     max-width: 450px;
     margin: auto;
@@ -163,7 +180,6 @@
     }
 
     .contact-wrapper {
-        height: 95vh;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-around;
