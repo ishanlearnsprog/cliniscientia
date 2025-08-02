@@ -19,7 +19,7 @@ export default function About() {
                 </div>
                 <div className="about-down-box">
                     <div className="about-down-content-box">
-                        <h1 className="poppins-bold">The Problems &#x26; Our Solutions</h1>
+                        <h1 className="poppins-bold">The Problems and Our Solutions</h1>
                         <p className="poppins-reg">To save your time and allow you to structure your studies around your schedule, we have offered the course in an online format with flexible timings.</p>
                         <p className="poppins-reg">Every person learns differently, and for some people sorting through the information available on the Internet might be more difficult than the learning part itself. For those students, our experienced instructors have built this course to provide all the essential information one would need to become a successful data manager.</p>
                     </div>
@@ -28,7 +28,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <EndContact title={ 'Gain expert guidance from our instructors' } subtitle={ 'We at Clini Scientia aim to equip you with the necessary skills to build a successful career in Clinical Research.' }/>
+            <EndContact title={ 'Receive expert guidance from our instructors' } subtitle={ 'We at Clini Scientia aim to equip you with the necessary skills to build a successful career in Clinical Research.' }/>
         </>
     )
 }

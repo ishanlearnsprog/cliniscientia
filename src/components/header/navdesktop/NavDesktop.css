@@ -13,11 +13,11 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .menu-desktop a {
-        font-size: 3rem;
+        font-size: 2rem;
         color: var(--text-grey);
         opacity: 0.8;
     }

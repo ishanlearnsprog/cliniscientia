@@ -153,19 +153,19 @@ export default function Course() {
                 <div className="modules-intro-box">
                     <h1 className="poppins-bold">The course is best suited for</h1>
                     <p className="poppins-reg"><span style={{ fontWeight: '500' }}>MBBS, BDS, BAMS, and BHMS</span> students and students currently pursuing graduate and postgraduate qualifications in medical and allied fields.</p>
-                    <p className="poppins-reg">Student pursuing Pharmacy <span style={{ fontWeight: '500' }}>(B Pharm, M Pharm, Pharm D)</span>, Life Sciences <span style={{ fontWeight: '500' }}>(BSc, MSc)</span>, or Engineering <span style={{ fontWeight: '500' }}>(BE, B Tech, M Tech in Biotechnology)</span>.</p>
+                    <p className="poppins-reg">Students pursuing Pharmacy <span style={{ fontWeight: '500' }}>(B Pharm, M Pharm, Pharm D)</span>, Life Sciences <span style={{ fontWeight: '500' }}>(BSc, MSc)</span>, or Engineering <span style={{ fontWeight: '500' }}>(BE, B Tech, M Tech in Biotechnology)</span>.</p>
                     <p className="poppins-reg">Professionals working in the health and pharmaceutical sector interested in clinical research.</p>
                     <p className="poppins-reg">Professionals engaged in clinical research and related operations.</p>
                     <h1 className="poppins-bold">The course is divided into 6 modules.</h1>
-                    <p className="poppins-reg">The first two modules of the course cover the basics required to work in a CDM project. They build the foundation for the beginner learner and act as a revision for the advanced learner.</p>
-                    <p className="poppins-reg">The other four modules cover the project lifecycle of a CDM project. The course has been structured to allow the beginner learner to gain familiarity with the project while the advanced learner will hopefully find helpful ideas to optimize their own workflows.</p>
+                    <p className="poppins-reg">The first two modules of the course cover the basics required to work in a CDM project. They build the foundation for the beginner learners and act as a revision for the advanced learners.</p>
+                    <p className="poppins-reg">The other four modules cover the project lifecycle of a CDM project. The course has been structured to allow the beginner learners to gain familiarity with the project while the advanced learners will hopefully find helpful ideas to optimize their own workflows.</p>
                 </div>
                 <div className="modules-list-box">
                     { moduleDetailsList }
                 </div>
             </section>
             <Placement />
-            <EndContact title={ 'Go from being a beginner to an expert with Clini Scientia' } subtitle={ 'We at Clini Scientia aim to equip you with the neccesary skills to build a successful career in Clinical Research.' } />
+            <EndContact title={ 'Go from being a beginner to an expert with Clini Scientia' } subtitle={ 'We at Clini Scientia aim to equip you with the neccessary skills to build a successful career in Clinical Research.' } />
         </>
     )
 }
